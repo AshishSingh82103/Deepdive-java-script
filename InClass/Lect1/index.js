@@ -9,3 +9,21 @@ let myFunction = function(item1, item2) {
 
 }
 console.log(myFunction(3, 2));
+
+try {
+    
+} catch (error) {
+    
+}
+
+let user = new Promise((resolve, reject) =>{
+    let items = null;
+    setInterval(() => {
+        if(items !== null) {
+            console.log("rejected the promises");
+            resolve();
+        }
+        }, 2000)
+    })
+     
+
