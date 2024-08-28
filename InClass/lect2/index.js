@@ -62,47 +62,68 @@
 
 // --------- in java script --------
 //  in java we cannot create property name with space but in java-script it is allowed
-let api = {
-    git: "yes",
-    access: 4,
-    ac: true,
-    sports: false,
-    power: true,
-    "engine version": 8,
-    "year": 2019
-}
+// let api = {
+//     git: "yes",
+//     access: 4,
+//     ac: true,
+//     sports: false,
+//     power: true,
+//     "engine version": 8,
+//     "year": 2019
+// }
 
-console.log(api); // { git: 'yes', access: 4, ac: true, sports: false, power: true }
+// console.log(api); // { git: 'yes', access: 4, ac: true, sports: false, power: true }
 
-// get the properties
-console.log(api.access); // 4
-console.log(api["git"], "will i get git"); // yes will i get git
-console.log(api["access"], "access are there"); // 4 access are there
-console.log(api.year, api.access,api.engineversion, "purchase_year");// 2019 4 undefined purchase_year
-console.log(api.year, api.access,api["engine version"], "purchase_year");// 2019 4 8 purchase_year
+// // get the properties
+// console.log(api.access); // 4
+// console.log(api["git"], "will i get git"); // yes will i get git
+// console.log(api["access"], "access are there"); // 4 access are there
+// console.log(api.year, api.access,api.engineversion, "purchase_year");// 2019 4 undefined purchase_year
+// console.log(api.year, api.access,api["engine version"], "purchase_year");// 2019 4 8 purchase_year
 
 
-// edit the properties
-api.git = "Not found";
-console.log(api.git); // Not Found
+// // edit the properties
+// api.git = "Not found";
+// console.log(api.git); // Not Found
 
-// delete the properties
-delete api.power
-delete api["engine version"]
-console.log(api);
+// // delete the properties
+// delete api.power
+// delete api["engine version"]
+// console.log(api);
 
-// -------Arrays------
+// // -------Arrays------
 
-let arr = [1, 2, "abcd", 4, 'c', true];
+// let arr = [1, 2, "abcd", 4, 'c', true];
+// console.log(arr);
+
+// //  get the value
+// console.log(arr[0]);
+
+// //  edit the value
+// arr[0] = "start";
+// console.log(arr);
+
+// // length of the array
+// console.log(arr.length, "het there array"); // 6
+
+// // weird thing
+
+// arr.length = 0; //  This is not good
+// arr.length = null;
+// console.log(arr, "hey there array"); // [] hey there array
+
+// ---- -- Properties of array-- ---
+
+let arr = [1, 2, 3, 4]
+
+// 1. push the value in array add  at the last position of array
+arr.push(5);
 console.log(arr);
 
-//  get the value
-console.log(arr[0]);
-
-//  edit the value
-arr[0] = "start";
+// pop the value in remove the last value of array
+arr.pop();
 console.log(arr);
-console.log(arr.length); // 6
+
 
 
 
