@@ -91,6 +91,19 @@ delete api.power
 delete api["engine version"]
 console.log(api);
 
+// -------Arrays------
+
+let arr = [1, 2, "abcd", 4, 'c', true];
+console.log(arr);
+
+//  get the value
+console.log(arr[0]);
+
+//  edit the value
+arr[0] = "start";
+console.log(arr);
+console.log(arr.length); // 6
+
 
 
 
