@@ -61,22 +61,32 @@
 // }
 
 // --------- in java script --------
+//  in java we cannot create property name with space but in java-script it is allowed
 let api = {
     git: "yes",
     access: 4,
     ac: true,
     sports: false,
     power: true,
+    "engine version": 8,
+    "year": 2019
 }
 
 console.log(api); // { git: 'yes', access: 4, ac: true, sports: false, power: true }
 
 // get the properties
 console.log(api.access); // 4
-
+console.log(api["git"], "will i get git"); // yes will i get git
+console.log(api["access"], "access are there"); // 4 access are there
+console.log(api.year, api.access,api.engineversion, "purchase_year");// 2019 4 undefined purchase_year
+console.log(api.year, api.access,api["engine version"], "purchase_year");// 2019 4 8 purchase_year
 // edit the properties
-let edit = api.git = "Not found";
-console.log(edit); // Not Found
+api.git = "Not found";
+console.log(api.git); // Not Found
+
+// delete the properties
+delete api.power
+console.log(api);
 
 
 
