@@ -1,29 +1,28 @@
-let myFunction = function(item1, item2) {
-    let items = 5;
-    if(items === 5) {
-        console.log(items);
-    } else {
-        console.log('not equal to 5')
-    }
-    return items + 1;
+console.log("Ashish Singh");
+console.log(3 + 1);
 
-}
-console.log(myFunction(3, 2));
+// java --> variable-> String boolean int char, object->className
 
-try {
-    
-} catch (error) {
-    
-}
+// java-script --> variable -> var, let, const
 
-let user = new Promise((resolve, reject) =>{
-    let items = null;
-    setInterval(() => {
-        if(items !== null) {
-            console.log("rejected the promises");
-            resolve();
-        }
-        }, 2000)
-    })
-     
+// var use before 2015 var is reasgine and update the value
+var name = "Ashihsh";
+var name = "anurag";
+
+// let => cannot resigne the value but update the value
+
+// let age = 25;
+//  let age = 26;
+//  age = 27;
+//  console.log(age); // 27
+
+//  const => cannot resigned and not update the value
+
+// const id = 37;
+// const id = 24;
+
+// id = 23;
+
+// console.log(id);
+
 
