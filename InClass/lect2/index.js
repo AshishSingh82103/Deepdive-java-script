@@ -80,12 +80,15 @@ console.log(api["git"], "will i get git"); // yes will i get git
 console.log(api["access"], "access are there"); // 4 access are there
 console.log(api.year, api.access,api.engineversion, "purchase_year");// 2019 4 undefined purchase_year
 console.log(api.year, api.access,api["engine version"], "purchase_year");// 2019 4 8 purchase_year
+
+
 // edit the properties
 api.git = "Not found";
 console.log(api.git); // Not Found
 
 // delete the properties
 delete api.power
+delete api["engine version"]
 console.log(api);
 
 
