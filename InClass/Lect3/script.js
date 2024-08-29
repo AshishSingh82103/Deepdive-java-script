@@ -12,7 +12,7 @@
 'use strict'
 // => in java-script
 // console.log(a) // undefined
-// var a = 12;
+// var a = 12; 
 // console.log(a) // 12
 
 
