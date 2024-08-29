@@ -97,7 +97,7 @@
 // console.log(arr);
 
 // //  get the value
-// console.log(arr[0]);
+// console.log(arr[0], arr[2], arr[4]);
 
 // //  edit the value
 // arr[0] = "start";
@@ -123,6 +123,13 @@ console.log(arr);
 // pop the value in remove the last value of array
 arr.pop();
 console.log(arr);
+
+// shift => it remove the first element of the array
+arr.shift()
+console.log(arr);
+
+
+
 
 
 
