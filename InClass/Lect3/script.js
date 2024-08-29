@@ -117,3 +117,40 @@ for (const key in obj) {
    console.log(key);
    console.log(obj[key]);
 }
+
+// Switch
+
+switch(condition) {
+    case 1:
+        // do something
+        console.log("1");
+        break;
+    case 2:
+        // do somethig
+        console.log("2");
+        break;
+
+    default:
+        console.log("do something else");
+
+}
+
+//  Grouping of switch case...
+
+switch(condition) {
+    case 1:
+    case 2:
+    case 3:
+        console.log("podium position");
+        break;
+    case 4:
+        console.log("consolidation position");
+        break;
+
+    default:
+        console.log("participated in race");
+        break;
+
+}
+
+
