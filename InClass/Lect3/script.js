@@ -16,10 +16,10 @@
 // console.log(a) // 12
 
 
-sum()
-function sum() {
-    console.log('inside the sum function');
-}
+// sum()
+// function sum() {
+//     console.log('inside the sum function');
+// }
 // sum();
 
 //  let and const hoisted in temporal dead zone
@@ -52,14 +52,14 @@ function sum() {
 // console.log(val1); // 125
 
 // --------- -------- ----------- Comparision(<, >, >=, <=, ==, !=, ===)------- ------------- ---------------
-console.log(1 > 2); // false
+// console.log(1 > 2); // false
 
-const val = 1;
-console.log(val == 1) // true
+// const val = 1;
+// console.log(val == 1) // true
 
-console.log(1 == "1"); // true
+// console.log(1 == "1"); // true
  
-console.log( 1 === "1"); // false it is checking the value and it's type
+// console.log( 1 === "1"); // false it is checking the value and it's type
 
 
 /*
@@ -68,16 +68,16 @@ console.log( 1 === "1"); // false it is checking the value and it's type
 
 //  if else
 
-if(true) {
-    //  do something
-} else {
-    // do something
-}
+// if(true) {
+//     //  do something
+// } else {
+//     // do something
+// }
 
 // Loops
 
 // for loops
-let arr = [1, 2, 3, 4]
+// let arr = [1, 2, 3, 4]
 // for(let i = 0; i < arr.length; i++) {
 //     console.log(arr[i]);
 // }
@@ -94,63 +94,109 @@ let arr = [1, 2, 3, 4]
 
 // for of => loops over arrays and (ittrable objects) => array is default ittrable object.
 
-let arr1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// let arr1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 // for (let element of arr1) {
 //     console.log(element);
     
 // }
 
-arr1.forEach((item) =>{
-    console.log(item);
-})
+// arr1.forEach((item) =>{
+//     console.log(item);
+// })
 
 
-let obj = {
-    name: "8324ashish",
-    class: 9,
-    age: 99,
-    canDrive: false
-}
+// let obj = {
+//     name: "8324ashish",
+//     class: 9,
+//     age: 99,
+//     canDrive: false
+// }
 
-for (const key in obj) {
-   console.log(key);
-   console.log(obj[key]);
-}
+// for (const key in obj) {
+//    console.log(key);
+//    console.log(obj[key]);
+// }
 
 // Switch
 
-switch(condition) {
-    case 1:
-        // do something
-        console.log("1");
-        break;
-    case 2:
-        // do somethig
-        console.log("2");
-        break;
+// switch(condition) {
+//     case 1:
+//         // do something
+//         console.log("1");
+//         break;
+//     case 2:
+//         // do somethig
+//         console.log("2");
+//         break;
 
-    default:
-        console.log("do something else");
+//     default:
+//         console.log("do something else");
 
+// }
+
+// //  Grouping of switch case...
+
+// switch(condition) {
+//     case 1:
+//     case 2:
+//     case 3:
+//         console.log("podium position");
+//         break;
+//     case 4:
+//         console.log("consolidation position");
+//         break;
+
+//     default:
+//         console.log("participated in race");
+//         break;
+
+// }
+
+/*
+  functions
+*/
+
+// function sum(a, b) {
+    
+//     return a + b;
+// }
+
+// let ans = sum(2,  3);
+// console.log(ans);
+
+
+// let c = 12;
+// function sum(num1, num2) {
+//     return num1 + num2 + c;
+// }
+
+// console.log(sum(2, 3))
+
+
+// default values
+
+//  function sum (a, b = 1) {
+//     return a + b
+//  }
+
+//  let result = sum(99)
+//  console.log(result); // 100
+
+// let result = sum(99, 2);
+// console.log(result); // 101
+
+
+// => what a function returns...
+// function sum (a, b) {
+//     return "Ashish"
+// }
+//  let result = sum(1, 2);
+//  console.log(result); // Ashish
+
+function sum (a, b) {
+    console.log(a, b)
+    // return undefined java-script behinde the secene
 }
-
-//  Grouping of switch case...
-
-switch(condition) {
-    case 1:
-    case 2:
-    case 3:
-        console.log("podium position");
-        break;
-    case 4:
-        console.log("consolidation position");
-        break;
-
-    default:
-        console.log("participated in race");
-        break;
-
-}
-
-
+ let result = sum(1, 2);
+ console.log(result, "result is here"); // undefined result is here
