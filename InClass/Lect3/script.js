@@ -35,16 +35,85 @@ function sum() {
 
 
 // ----------Basic Math(assignments, operators)----------------
-console.log(1 + 2); // 3
+// console.log(1 + 2); // 3
+// console.log(1 > 2); // false
+
+// console.log(10 % 2); // 0
+
+// console.log(Math.pow(2, 3)); // 8
+// console.log(2 ** 3); // 8
+
+
+// // const val1 = "123" + 2;
+
+// // console.log(val1); // 1232
+
+// const val1 = +"123" + 2;
+// console.log(val1); // 125
+
+// --------- -------- ----------- Comparision(<, >, >=, <=, ==, !=, ===)------- ------------- ---------------
 console.log(1 > 2); // false
 
-console.log(10 % 2); // 0
+const val = 1;
+console.log(val == 1) // true
 
-console.log(Math.pow(2, 3)); // 8
-console.log(2 ** 3); // 8
+console.log(1 == "1"); // true
+ 
+console.log( 1 === "1"); // false it is checking the value and it's type
 
 
-const val1 = "123" + 2;
+/*
+   few programings...
+*/
 
-console.log(val1); // 1232
+//  if else
 
+if(true) {
+    //  do something
+} else {
+    // do something
+}
+
+// Loops
+
+// for loops
+let arr = [1, 2, 3, 4]
+// for(let i = 0; i < arr.length; i++) {
+//     console.log(arr[i]);
+// }
+
+
+// while loop
+// let j = 0;
+// while( j < arr.length) {
+//     console.log(arr[j]);
+//     j++;
+// }
+
+// for in => loops over object and its properties
+
+// for of => loops over arrays and (ittrable objects) => array is default ittrable object.
+
+let arr1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// for (let element of arr1) {
+//     console.log(element);
+    
+// }
+
+arr1.forEach((item) =>{
+    console.log(item);
+})
+
+
+let obj = {
+    name: "8324ashish",
+    class: 9,
+    age: 99,
+    canDrive: false
+}
+
+for (const key in obj) {
+   console.log(key);
+   console.log(obj[key]);
+}
