@@ -8,9 +8,9 @@ const c = 4;
 c = 5; // this is illegal
 
 // ------------- ---------- execution context -------- ---------------
-//  var =>  
+//  var => 
 //  let => 
-//  const = > 
+//  const => 
 
 
 

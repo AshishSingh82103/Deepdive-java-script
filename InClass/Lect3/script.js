@@ -200,3 +200,5 @@ function sum (a, b) {
 }
  let result = sum(1, 2);
  console.log(result, "result is here"); // undefined result is here
+
+ 
