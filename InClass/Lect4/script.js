@@ -14,6 +14,15 @@
 
 console.log("abcd"); // abcd
 
+var a = 12;
+console.log(a); // 12
+
+if(true) {
+    console.log(a); // 12
+}
+
+
+
 
 
 
