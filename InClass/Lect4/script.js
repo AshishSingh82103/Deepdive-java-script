@@ -17,9 +17,15 @@ console.log("abcd"); // abcd
 var a = 12;
 console.log(a); // 12
 
+
 if(true) {
+    var c = 10;
     console.log(a); // 12
+    console.log(c); // 10
 }
+console.log(c);
+
+
 
 
 
