@@ -24,10 +24,10 @@ console.log(a); // 12
 
 if(true) {
     var c = 10;
-    console.log(a); // 12
+    console.log(a); // 12 if the parent scope have the variable the the child scope will also have the access
     console.log(c); // 10
 }
-console.log(c);
+console.log(c); // if the varible is define in the block scope and execution out side in the execution context will also have access to it.
 
 
 let d = 13;
@@ -38,7 +38,7 @@ if(true) {
     let e = 23;
     console.log(e);
 }
-console.log(e); // error e is not defined
+console.log(e); // 
 
 
 
