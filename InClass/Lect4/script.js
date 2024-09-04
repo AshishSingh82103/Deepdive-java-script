@@ -15,7 +15,7 @@
 
 // ---------- -- Scope -- ---------------
 
-// Rule No.1 => The file will be executed in the same time
+// Rule No.1 => The java-script file its self global.
 console.log("abcd"); // abcd
 
 var a = 12;
@@ -39,6 +39,7 @@ if(true) {
     console.log(e);
 }
 console.log(e); // error e is not defined
+
 
 
 
