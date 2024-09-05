@@ -27,18 +27,18 @@ if(true) {
     console.log(a); // 12 if the parent scope have the variable the the child scope will also have the access
     console.log(c); // 10
 }
-console.log(c); //  10 if the element normalize in the man scope then the lock scope reman working
+console.log(c); //  10 
 
 
 let d = 13;
-console.log(d); 
+console.log(d); // 13
 
 if(true) {
-    console.log(d);
+    console.log(d); // 13
     let e = 23;
-    console.log(e);
+    console.log(e); // 23
 }
-console.log(e); // error
+// console.log(e); // error
 
 
 
