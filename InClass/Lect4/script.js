@@ -27,18 +27,28 @@ if(true) {
     console.log(a); // 12 if the parent scope have the variable the the child scope will also have the access
     console.log(c); // 10
 }
-console.log(c); // if the varible is define in the block scope and execution out side in the execution context will also have access to it.
+console.log(c); //  10 if the element normalize in the man scope then the lock scope reman working
 
 
 let d = 13;
-console.log(d);
+console.log(d); 
 
 if(true) {
     console.log(d);
     let e = 23;
     console.log(e);
 }
-console.log(e); // e is not defined 
+// console.log(e);  error
+
+
+let items = 25;
+console.log(items);
+
+if(true) {
+    console.log("items is here", items)
+    let item2 = 30;
+    console.log(item2);
+}
 
 
 
