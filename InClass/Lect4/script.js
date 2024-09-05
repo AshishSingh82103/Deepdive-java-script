@@ -41,14 +41,6 @@ if(true) {
 // console.log(e);  error
 
 
-let items = 25;
-console.log(items);
-
-if(true) {
-    console.log("items is here", items)
-    let item2 = 30;
-    console.log(item2);
-}
 
 
 
