@@ -38,7 +38,7 @@ if(true) {
     let e = 23;
     console.log(e);
 }
-// console.log(e);  error
+console.log(e); // error
 
 
 
