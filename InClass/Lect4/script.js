@@ -40,6 +40,35 @@ if(true) {
 }
 // console.log(e); // erro
 
+var constant = 34;
+console.log(constant);
+if(true) {
+    console.log(constant);
+}
+
+let variableDeclare = "Infinte";
+switch(variableDeclare){
+    case 1:
+        console.log("breakValue");
+    break;
+
+    case 2 :
+        console.log("Search engine operation");
+    break;
+
+    case 3:
+        console.log("Performance review");
+    break;
+
+    case 4:
+        console.log("Git Execution context");
+    break;
+
+    default:
+        console.log("Expextin Error");
+    break;
+}
+
 
 
 
