@@ -97,6 +97,9 @@ let heading = document.getElementById("heading");
 
 document.getElementById("heading").style.color = "black";
 
+let paragraph = document.getElementById("paragraph");
+p
+
 
 
 
