@@ -18,6 +18,7 @@
 // Rule No.1 => The java-script file its self global.
 console.log("abcd"); // abcd
 
+// ------------scope- var -variable-----------------
 var a = 12;
 console.log(a); // 12
 
@@ -27,23 +28,24 @@ if(true) {
     console.log(a); // 12 if the parent scope have the variable the the child scope will also have the access
     console.log(c); // 10
 }
-console.log(c); //  10 
+console.log(c); //  10 in var variable scope is always working on as a global scope.
 
 
 let d = 13;
 console.log(d); // 13
 
+// -------------Scoping let-variable------------------
 if(true) {
     console.log(d); // 13
     let e = 23;
     console.log(e); // 23
 }
-// console.log(e); // erro
+// console.log(e); // error
 
 var constant = 34;
-console.log(constant);
+console.log(constant); // 34
 if(true) {
-    console.log(constant);
+    console.log(constant); // 34
 }
 
 let variableDeclare = "Infinte";
@@ -68,6 +70,8 @@ switch(variableDeclare){
         console.log("Expextin Error");
     break;
 }
+
+
 
 
 
