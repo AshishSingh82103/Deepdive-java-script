@@ -48,6 +48,8 @@ if(true) {
     console.log(constant); // 34
 }
 
+// ------------- -- Switch-case -- ----------------
+
 let variableDeclare = "Infinte";
 switch(variableDeclare){
     case 1:
@@ -71,6 +73,29 @@ switch(variableDeclare){
     break;
 }
 
+let promiseOne = new Promise((resolve, reject) => {
+    let item = null;
+    setInterval(() => {
+        if(item != null) {
+            resolve();
+            console.log("Fetchign Api server to execute and run the file");
+        } else {
+            reject(error);
+            console.log("Getting error because of passing value is not occured");
+        }
+    }, 2000)
+})
+promiseOne
+.then((user) => {
+    console.log(user, "Fetchign Api server to execute and run the file");
+})
+.catch((error) => {
+    console.log(error, "Getting error because of passing value is not occured");
+})
+
+let heading = document.getElementById("heading");
+
+document.getElementById("heading").style.color = "black";
 
 
 
