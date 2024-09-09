@@ -18,7 +18,7 @@
 // Rule No.1 => The java-script file its self global.
 // Rule No.2 => Scope of var => Global and functional
 // Rule No. 3 => Var dosen't care about {}
-
+//  King rule => var has the scope of execution context
 
 // ------------scope- var -variable-----------------
 
@@ -48,15 +48,27 @@
 // }
 // // console.log(e); // error
 
-const a = 12; // global
+// const a = 12; // global
+// console.log(a); // 12
+
+// if(true) {
+//     console.log(a); // 12
+//     const b = 13;
+//     console.log(b); // 13
+// }
+// console.log(b); // error
+
+var a = 12;
 console.log(a); // 12
 
-if(true) {
-    console.log(a); // 12
-    const b = 13;
-    console.log(b); // 13
+function abc() {
+    var a = 13;
+    console.log(a); // 13
+
 }
-console.log(b); // error
+
+abc();
+console.log(a); //12
 
 
 
