@@ -58,17 +58,66 @@
 // }
 // console.log(b); // error
 
+// var a = 12;
+// console.log(a); // 12
+
+// function abc() {
+//     var a = 13;
+//     console.log(a); // 13
+
+// }
+
+// abc();
+// console.log(a); //12
+
+
+// function abc() {
+//     let a = 1;
+//     let b = 2;
+//     // return undefined; if we will not write this code js will injected automatically
+// }
+// let res = abc();
+// console.log(res); // undefined
+
+
+// var a = 12;
+// console.log(a); // 12
+
+// if(true) {
+//     var a = 13;
+//     console.log(a); // 13
+// }
+
+// console.log(a); // 13
+
+// function abc() {
+//     var a = 12;
+//     console.log(a); // 12
+// }
+
+// abc();
+// console.log(a); // 13
+
+
 var a = 12;
 console.log(a); // 12
 
-function abc() {
+if(true) {
     var a = 13;
     console.log(a); // 13
-
 }
 
-abc();
-console.log(a); //12
+console.log(a); // 13
+
+function abc() {
+    var a = 12;
+    console.log(a); // 12
+    return a;
+}
+
+let result = abc();
+console.log(result); // 12
+ 
 
 
 
