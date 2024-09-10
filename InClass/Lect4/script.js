@@ -117,6 +117,8 @@ function abc() {
 
 let result = abc();
 console.log(result); // 12
+
+
  
 
 
