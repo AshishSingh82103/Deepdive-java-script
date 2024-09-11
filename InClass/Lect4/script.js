@@ -121,8 +121,7 @@ console.log(result); // 12
 
 
 
-let value = 35;
-console.log(value); 
+
 
 
 
