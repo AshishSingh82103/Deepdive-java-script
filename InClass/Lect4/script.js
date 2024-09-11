@@ -99,24 +99,39 @@
 // console.log(a); // 13
 
 
+// var a = 12;
+// console.log(a); // 12
+
+// if(true) {
+//     var a = 13;
+//     console.log(a); // 13
+// }
+
+// console.log(a); // 13
+
+// function abc() {
+//     var a = 12;
+//     console.log(a); // 12
+//     return a;
+// }
+
+// let result = abc();
+// console.log(result); // 12
+// console.log(a); // 13
+
+console.log(a);
 var a = 12;
-console.log(a); // 12
 
-if(true) {
-    var a = 13;
-    console.log(a); // 13
-}
-
-console.log(a); // 13
+abc();
 
 function abc() {
-    var a = 12;
-    console.log(a); // 12
-    return a;
-}
+    console.log('hello');
+    console.log(a);
 
-let result = abc();
-console.log(result); // 12
+    var a = 19;
+    console.log(a);
+}
+console.log(a);
 
 
 
