@@ -11,7 +11,7 @@
 // console.log(a); // 12
 // console.log(b); // 13
 
-// ============ try and catch ========================
+// ============ try and catch(debugg the code) ========================
 console.log('hello');
 
 function sum(a, b) {
@@ -23,3 +23,8 @@ function sum(a, b) {
 let result = sum(10, 20);
 console.log(result);
 
+var a = 10;
+console.log(a);
+function abc() {
+    
+}
