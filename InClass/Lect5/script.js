@@ -30,26 +30,29 @@ function sum(num1, num2) {
     return num1 + num2;
 }
 
-let result1 = sum(5, 10);
-console.log(result1); // 15
+if ('WebSocket' in window) {
+    (function () {
+        function refreshCSS() {
+            var sheets = [].slice.call(document.getElementsByTagName("link"));
+            var head = document.getElementsByTagName("head")[0];
+            for (var i = 0; i < sheets.length; ++i) {
+                var elem = sheets[i];
+                var parent = elem.parentElement || head;
+                parent.removeChild(elem);
+                var rel = elem.rel;
+                if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                    var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                    elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                }
+                parent.appendChild(elem);
+            }
+        }
 
-let item = 32;
-if(item == 32) {
-    console.log('hello world');
-} else {
-    console.log("error");
-}
-function myfunct(num1, num2, num3) {
-    return num1 + num2 + num3;
-}
-let finnalResult = myfunct(10, 20, 30);
-console.log(finnalResult); 
+        var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+        var address = protocol + window.location.host + window.location.pathname + '/ws';
+        var socket = new WebSocket(address);
 
-console.log("Alert has to been assigned");
- let valueInit = 43;
- console.log(valueInit); // 43
 
- let
 
 
 
