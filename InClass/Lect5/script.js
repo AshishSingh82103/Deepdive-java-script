@@ -52,7 +52,7 @@ if ('WebSocket' in window) {
         var address = protocol + window.location.host + window.location.pathname + '/ws';
         var socket = new WebSocket(address);
 
-
+    }
 
 
 
