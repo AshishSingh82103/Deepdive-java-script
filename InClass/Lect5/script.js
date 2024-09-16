@@ -16,7 +16,7 @@ console.log('hello');
 
 function sum(a, b) {
     //  Do something 
-    throw Error('Refernce Error due to non aligmnet'); 
+    // throw Error('Refernce Error due to non aligmnet'); 
     return a + b;
 
 }
@@ -39,7 +39,7 @@ if(true) {
 let promiseOne = new Promise((resolve, reject)=> {
     let items = null;
     setInterval(() =>{
-        if( item === null) {
+        if( items === null) {
             console.log("No Items found");
             resolve("Error not getting find");
         } else {
@@ -60,6 +60,11 @@ promiseOne
 .finally(() =>{
     console.log("finllay getting executed")
 })
+
+const exampleOfTh  = "singhashish@82103gmail.com"; 
+const nextPath = 
+
+
 
 
 
