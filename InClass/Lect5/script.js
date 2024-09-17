@@ -39,6 +39,10 @@ let functions =  function myfunct(num1, num2) {
  console.log(result1); // 20
 //  console.log(scopes); // error becoz of block scopes we can'nt find the lexical scopes
 
+let user = [2, 4, 6, 8, 10];
+console.log(user);
+user.push(12);
+console.log(user); //[2, 4, 6, 8, 10, 12]
 
 
 
