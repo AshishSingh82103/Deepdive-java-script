@@ -37,7 +37,7 @@ let functions =  function myfunct(num1, num2) {
 }
  let result1 = functions(4, 5);
  console.log(result1); // 20
- console.log(scopes); // error becoz of block scopes we can'nt find the lexical scopes
+//  console.log(scopes); // error becoz of block scopes we can'nt find the lexical scopes
 
 
 
