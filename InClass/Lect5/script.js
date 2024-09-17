@@ -26,8 +26,19 @@ console.log(result);
 var a = 10;
 console.log(a);
 
-let itemIcons = 34;
-// console.log();
+
+let items = 34;
+console.log(items);
+
+let functions =  function myfunct(num1, num2) {
+    let scopes = undefined;
+    console.log(scopes); // 20
+    return num1 * num2;
+}
+ let result1 = functions(4, 5);
+ console.log(result1); // 20
+ console.log(scopes); // error becoz of block scopes we can'nt find the lexical scopes
+
 
 
 
