@@ -11,7 +11,7 @@
 // console.log(a); // 12
 // console.log(b); // 13
 
-// ============ try and catch(debugg the code) ========================
+// ============ try and catch(debugg the code) ========================>
 console.log('hello');
 
 function sum(a, b) {
@@ -43,6 +43,9 @@ let user = [2, 4, 6, 8, 10];
 console.log(user);
 user.push(12);
 console.log(user); //[2, 4, 6, 8, 10, 12]
+
+
+
 
 
 
