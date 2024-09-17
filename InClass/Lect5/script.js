@@ -43,7 +43,11 @@ let user = [2, 4, 6, 8, 10];
 console.log(user);
 user.push(12);
 console.log(user); //[2, 4, 6, 8, 10, 12]
-
+console.log("scopes unrelased");
+for(let i =0; i < user.length; i++) {
+    console.log(user[i]);
+}
+user.pull
 
 
 
