@@ -53,6 +53,9 @@ for(let i =0; i < user.length; i++) {
     }
 };
 
+let vslue = 78;
+console.log(vslue); // 78
+
 
 
 
