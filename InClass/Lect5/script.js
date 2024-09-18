@@ -46,9 +46,11 @@ console.log(user); //[2, 4, 6, 8, 10, 12]
 console.log("scopes unrelased");
 for(let i =0; i < user.length; i++) {
     console.log(user[i]);
+    if(true) {
+        console.log("seme is the final");
+    }
 }
-user.delete();
-console.log(user);
+
 
 
 
