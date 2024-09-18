@@ -47,9 +47,9 @@ console.log("scopes unrelased");
 for(let i =0; i < user.length; i++) {
     console.log(user[i]);
     if(true) {
-        console.log("seme is the final");
+        console.log("system desgined is the final"); 
     } else {
-        console.log('user-login');
+        console.log("secure is the main task to impromise the given value form it!");
     }
 };
 
