@@ -18,3 +18,10 @@ p {
     opacity: 0px;
 }
 
+.list-two {
+    padding: 15px;
+    margin: 15px;
+    color: rgb(35, 214, 214);
+    background: fixed;
+}
+

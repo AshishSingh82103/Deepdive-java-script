@@ -47,7 +47,9 @@ console.log("scopes unrelased");
 for(let i =0; i < user.length; i++) {
     console.log(user[i]);
 }
-user.pull
+user.delete();
+console.log(user);
+
 
 
 
