@@ -30,31 +30,7 @@ console.log(a);
 let items = 34;
 console.log(items);
 
-let functions =  function myfunct(num1, num2) {
-    let scopes = undefined;
-    console.log(scopes); // 20
-    return num1 * num2;
-}
- let result1 = functions(4, 5);
- console.log(result1); // 20
-//  console.log(scopes); // error becoz of block scopes we can'nt find the lexical scopes
 
-let user = [2, 4, 6, 8, 10];
-console.log(user);
-user.push(12);
-console.log(user); //[2, 4, 6, 8, 10, 12]
-console.log("scopes unrelased");
-for(let i =0; i < user.length; i++) {
-    console.log(user[i]);
-    if(true) {
-        console.log("system desgined is the final"); 
-    } else {
-        console.log("secure is the main task to impromise the given value form it!");
-    }
-};
-
-let vslue = 78;
-console.log(vslue); // 78
 
 
 
