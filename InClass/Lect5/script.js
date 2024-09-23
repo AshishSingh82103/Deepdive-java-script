@@ -76,3 +76,11 @@ console.log(arr[1]); // 2
 let userLoggedIn = true;
 let userId = "singhashish832109tcs@gmail.com";
 let password = "Singh@82103";
+
+if( userLoggedIn === true) {
+    console.log("execution completed")
+} else if(userId === "singhashish832109tcs@gmail.com") {
+    console.log("Id get found in the trem of the success");
+} else if(password === "Singh@82103") {
+    console.log("everyone executed");
+}
