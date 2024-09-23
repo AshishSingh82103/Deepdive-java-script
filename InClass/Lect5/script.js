@@ -30,7 +30,47 @@ console.log(a);
 let items = 34;
 console.log(items);
 
+let constVariable = "valueIsExistingUser";
+console.log(constVariable); // valueIsVarible
+let valueIstrue = false;
+if(valueIstrue === true) {
+    console.log("hello is user the name"); // Nothing is find from it's execution context
+}
+console.log("hello User"); // hello User
 
+let arr = [1, 2, 3, 4, 5];
+
+console.log(arr[1]); // 2
+
+// for(let i = 0; i <= arr.length; i++) {
+//     console.log(arr);
+// }
+
+// "git checkout -b BTS-6-sample-resolve-api-timeout-issues" 
+
+let promiseOne = new Promise((resolve, reject) => {
+    let items = "valuedetremination";
+    setInterval(() => {
+        if(items != String) {
+            console.log("is frameWorking");
+            resolve();
+        } else {
+            console.log("API TimeOut issue")
+            reject('error');
+        }
+    }, 2000)
+
+})
+promiseOne
+.then((getFecth) => {
+    console.log("is frameWorking", getFecth);
+})
+.catch((error) => {
+    console.log("API TimeOut issue", error)
+})
+.finally(() => {
+    console.log("Execution is finally over");
+})
 
 
 
