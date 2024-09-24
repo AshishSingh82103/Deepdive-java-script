@@ -30,3 +30,12 @@ console.log(a);
 let items = 34;
 console.log(items);
 
+let userID = "singhashish82103@gmail.com";
+let userlogIn! = true;
+let password = "singh@82103";
+
+if(userID == "singhashish82103@gmail.com") {
+    console.log("conditional satisfactory ");   
+} else if() {
+    console.log()
+}
