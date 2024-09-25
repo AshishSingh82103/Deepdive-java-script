@@ -43,6 +43,23 @@ let myFunc = function(num1, num2) {
 console.log(myFunc(10, 5)); // 15
 
 
+let result1 = 56;
+console.log(result1);
 
+let promise = new Promise((resolve, rejcet) => {
+    let itemPhrase = null;
+    setInterval(()=> {
+        if(itemPhrase === null) {
+            console.log("hey there user how are you doing");
+            resolve();
+        } else {
+            rejcet(error)
+        }
+    }, 2000)
+})
+promise
+.then((user) => {
+    console.log("here is the")
+})
 
 
