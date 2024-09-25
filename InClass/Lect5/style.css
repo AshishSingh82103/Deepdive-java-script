@@ -10,23 +10,5 @@ p {
     background-color: blueviolet;
     display: block;
     block-size: auto;
-}
-.aside {
-    width: Fixed (1,210px)px;
-    height: Fixed (834px)px;
-    gap: 0px;
-    opacity: 0px;
-}
 
-.list-two {
-    padding: 15px;
-    margin: 15px;
-    color: rgb(35, 214, 214);
-    background: fixed;
-}
-
-.list-three {
-    background-attachment: fixed;
-    
-}
 
