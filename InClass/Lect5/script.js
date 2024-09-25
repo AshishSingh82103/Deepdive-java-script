@@ -17,13 +17,22 @@
 function sum(a, b) {
     //  Do something 
     // throw Error('Refernce Error due to non aligmnet'); 
-    return a + b;
 
+    
+    try {
+        // do something
+        let c = a + b;
+        return c;
+
+    } catch(error) {
+    console.log("hey there user how are you doing")
+    // screen uhhh something went wrong
 }
+
 let result = sum(10, 20);
 console.log(result);
 
-var a = 10;
-console.log(a);
+
+}
 
 
