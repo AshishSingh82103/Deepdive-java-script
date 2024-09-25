@@ -21,6 +21,7 @@ function sum(a, b) {
     
     try {
         // do something
+        throw Error('Refernce Error due to non aligmnet'); 
         let c = a + b;
         return c;
 
@@ -29,10 +30,14 @@ function sum(a, b) {
     // screen uhhh something went wrong
 }
 
-let result = sum(10, 20);
-console.log(result);
-
-
 }
+
+let result = sum(10, 20);
+console.log(result); // 30
+
+
+
+
+
 
 
