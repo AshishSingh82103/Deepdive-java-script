@@ -36,7 +36,11 @@ let result = sum(10, 20);
 console.log(result); // 30
 
 
-
+let myFunc = function(num1, num2) {
+    let result = num1 + num2;
+    return result;
+}
+console.log(myFunc(10, 5)); // 15
 
 
 
