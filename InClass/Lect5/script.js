@@ -90,3 +90,31 @@ function division(divi1, divi2) {
     }
 }
 console.log(division(24 % 2));
+
+let promiseOne = new Promise((resolve, reject) => {
+    setInterval(() => {
+        // Do Something
+        setInterval(() =>{
+            let items_value = null;
+            if(items_value != null) {
+                resolve("Passing message");
+                console.log("passing message by server issue");
+            } else {
+                reject();
+            }
+        }, 2000)
+
+    })
+
+})
+
+promiseOne
+.then((user) => {
+    console.log('Hey there user Api getting resopnse',  user)
+})
+.catch((error) =>{
+    console.log("Thorw error", error);
+})
+.finally((resolve) => {
+    console.log("Finally resolve then some message printed"); // result printited here
+})
