@@ -37,5 +37,56 @@ let result = sum(10, 20);
 console.log(result); // 30
 
 
+function add(num1 , num2) {
+    // Do something
+    try {
+        throw Error('Refernce error due to non-aligment');
+        let result = num1 + num2
+        return result;
+    } catch(error) {
+        console.log("hey there user how are you doing");
+    }
+}
+let sum1 = add(2, 3);
+console.log(sum1);
 
+function multiplie(product1, product2) {
+        try {
+            // Do Something
+            throw Error("Expectation error due to non-aligment");
+            let result = product1 * product2;
+            return result;
+        } catch(error) {
+            console.log("Hey there user how to do resolve the issue") //
+        }
 
+}
+let finalResult = multiplie( 10 * 3);
+console.log(finalResult);
+
+function devide( div1, div2) {
+    try {
+        // DO Something
+        throw Error("Expectation error due to non-aligment");
+        let result = div1 / div2;
+        return result;
+    } catch(error) {
+        console.log('Hey there user how are you doing'); // result is ocnsdering here
+    }
+}
+let finalResult2 = devide(25 / 5);
+console.log(finalResult2);
+
+// =========== m pecent resolve -------------
+
+function division(divi1, divi2) {
+    //  Do something
+    try {
+        throw Error('error handling server problem');
+        let result = divi1 % divi2;
+        return result;
+    } catch(error) {
+        console.log('hey there user how are you doing')
+    }
+}
+console.log(division(24 % 2));
