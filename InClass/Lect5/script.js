@@ -120,3 +120,6 @@ promiseOne
 })
 
 let userDefine = "Access Granted";
+if(userDefne == String) {
+    console.log("Printed the user");
+}
