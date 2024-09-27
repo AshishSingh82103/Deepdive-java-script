@@ -119,3 +119,4 @@ promiseOne
     console.log("Finally resolve then some message printed"); // result printited here
 })
 
+let userDefine = "Access Granted";
