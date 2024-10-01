@@ -46,3 +46,12 @@ function sum(a, b) {
         console.log(error, "error caught");
     }
 }
+let finalResult = sum(10, 3);
+console.log(finalResult);
+
+let resolve = new Object(
+    {
+        newResource: "resolve",
+        
+    }
+)
