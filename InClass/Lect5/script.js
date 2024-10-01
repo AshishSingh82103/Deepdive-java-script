@@ -57,3 +57,11 @@ let resolve1 = new Object(
     }
 )
 console.log(resolve1.fetchingresopnse);
+
+let rsetApi = new Object(
+    {
+        newUserLogIn: "Yes",
+        userID: "ashishsingh82103",
+        UserLogIN!: 
+    }
+)
