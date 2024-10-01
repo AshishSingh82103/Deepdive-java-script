@@ -37,4 +37,12 @@ let result = sum(10, 20);
 console.log(result); // 30
 
 
-
+function sum(a, b) {
+    try {
+        throw Error("Refernce from the error");
+        let result = a + b;
+        return result;
+    } catch(error) {
+        console.log(error, "error caught");
+    }
+}
