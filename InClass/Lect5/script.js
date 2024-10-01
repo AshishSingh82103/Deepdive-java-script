@@ -49,9 +49,11 @@ function sum(a, b) {
 let finalResult = sum(10, 3);
 console.log(finalResult);
 
-let resolve = new Object(
+let resolve1 = new Object(
     {
         newResource: "resolve",
-        
+        fetchingresopnse: "reject response",
+        api: "https://api.github.com/users/ashishsingh82103",
     }
 )
+console.log(resolve1.fetchingresopnse);
