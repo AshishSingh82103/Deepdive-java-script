@@ -62,6 +62,10 @@ let rsetApi = new Object(
     {
         newUserLogIn: "Yes",
         userID: "ashishsingh82103",
-        UserLogIN!: 
+        UserLogIN: true,
+        negativeValue: false,
+        overwriteSittuation: true,
+        flaseNaritive: apexUserseemtobetheend
+
     }
 )
