@@ -50,3 +50,4 @@ let myFunction = function (newValue1, newValue2) {
 }
 let finalResult = myFunction(20, 30);
 console.log(finalResult); // 50
+
