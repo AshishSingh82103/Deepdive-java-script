@@ -77,13 +77,26 @@ let divisionValue = function(div1, div2) {
 let divResult = divisionValue(30, 2);
 console.log(divResult); // 15
 
-const promise = new Promise((resolve, reject) => {
+const promiseRestApi = new Promise((resolve, reject) => {
     setTimeout(() => {
         let setLetGo = null;
         if(setLetGo === true) {
-            
+            console.log("set action is identfied");
+            resolve("resolve issue");
         } else {
-            
+            console.log('set back login')
+            reject(error);
         }
     },2000)
+})
+
+promiseRestApi
+.then(() => {
+
+})
+.catch(() => {
+
+})
+.finally(() =>{
+    
 })
