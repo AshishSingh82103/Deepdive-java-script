@@ -37,35 +37,4 @@ let result = sum(10, 20);
 console.log(result); // 30
 
 
-function sum(a, b) {
-    try {
-        throw Error("Refernce from the error");
-        let result = a + b;
-        return result;
-    } catch(error) {
-        console.log(error, "error caught");
-    }
-}
-let finalResult = sum(10, 3);
-console.log(finalResult);
 
-let resolve1 = new Object(
-    {
-        newResource: "resolve",
-        fetchingresopnse: "reject response",
-        api: "https://api.github.com/users/ashishsingh82103",
-    }
-)
-console.log(resolve1.fetchingresopnse);
-
-let rsetApi = new Object(
-    {
-        newUserLogIn: "Yes",
-        userID: "ashishsingh82103",
-        UserLogIN: true,
-        negativeValue: false,
-        overwriteSittuation: true,
-        flaseNaritive: apexUserseemtobetheend
-
-    }
-)
