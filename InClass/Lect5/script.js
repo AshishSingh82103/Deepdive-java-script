@@ -52,5 +52,9 @@ let finalResult = myFunction(20, 30);
 console.log(finalResult); // 50
 
 let insure1 = function(vauleX, valueY) {
-    
+    try {
+        throw Error("Object creation");
+    } catch(error) {
+        console.log("remove from the list")
+    }
 }
