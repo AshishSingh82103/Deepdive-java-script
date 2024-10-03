@@ -38,3 +38,15 @@ console.log(result); // 30
 
 
 
+let myFunction = function (newValue1, newValue2) {
+    try {
+        // Do some - thing
+        // throw Error('somethig got missprinited');
+        let result = newValue1 + newValue2;
+        return result;
+    } catch (error) {
+        console.log('error caught by users');
+    }
+}
+let finalResult = myFunction(20, 30);
+console.log(finalResult); // 50
