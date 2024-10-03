@@ -91,10 +91,10 @@ const promiseRestApi = new Promise((resolve, reject) => {
 })
 
 promiseRestApi
-.then(() => {
-
+.then((user) => {
+    
 })
-.catch(() => {
+.catch((error) => {
 
 })
 .finally(() =>{
