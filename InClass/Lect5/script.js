@@ -51,10 +51,39 @@ let myFunction = function (newValue1, newValue2) {
 let finalResult = myFunction(20, 30);
 console.log(finalResult); // 50
 
-let insure1 = function(vauleX, valueY) {
+let insure1 = function(valueX, valueY) {
     try {
-        throw Error("Object creation");
+        // throw Error("Object creation");
+        let result = valueX * valueY;
+        return result;
     } catch(error) {
-        console.log("remove from the list")
+        console.log("remove from the list");
     }
 }
+
+let concived = insure1(30, 2);
+console.log(concived);
+
+let divisionValue = function(div1, div2) {
+    try {
+        // throw Error("some part is missing");
+        let result = div1 / div2;
+        return result;
+    } catch(error) {
+        console.log("error caught");
+    }
+}
+
+let divResult = divisionValue(30, 2);
+console.log(divResult); // 15
+
+const promise = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        let setLetGo = null;
+        if(setLetGo === true) {
+            
+        } else {
+            
+        }
+    },2000)
+})
