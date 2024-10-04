@@ -79,3 +79,11 @@ promise
 .finally((resolve) =>{
     console.log("resolve", resolve)
 })
+let valueOfUSerApi  = new Object(
+    {
+        "login": "AshishSingh82103",
+        "id": 117755948,
+        "node_id": "U_kgDOBwTQLA",
+        "avatar_url": "https://avatars.githubusercontent.com/u/117755948?v=4",
+    }
+)
