@@ -59,9 +59,18 @@ console.log(result1);
 
 let promise = new Promise((resolve, reject)=> {{
     setInterval(() => {
-        
+        setInterval(() => {
+            
+        }, 4000);
     }, 2000);
 }});
+promise
+.then(() => {
 
+})
+.catch(() =>{
 
-
+})
+.finally(() =>{
+    
+})
