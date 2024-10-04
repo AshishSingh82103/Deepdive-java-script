@@ -37,8 +37,18 @@ let result = sum(10, 20);
 console.log(result); // 30
 
 let myFunc = function(newValue1, newValue2) {
-    
+    let userId = "832109";
+    let password = "singh@82103";
+    let login = true;
+    throw Error("some message printed");
+    let result = newValue1 + newValue2;
+    return result;
 }
+
+let result1 = myFunc(10, 3);
+console.log(result1);
+
+
 
 
 
