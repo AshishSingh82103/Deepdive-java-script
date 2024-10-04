@@ -26,12 +26,16 @@ function sum(a, b) {
         return c;
 
     } catch(error) {
-    console.log("hey there user how are you doing")
+    console.log("hey there user how are you doing") // output-printed
     // screen uhhh something went wrong
    
 }
 
 }
+
+
+
+
 
 let result = sum(10, 20);
 console.log(result); // 30
