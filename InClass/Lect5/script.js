@@ -59,18 +59,23 @@ console.log(result1);
 
 let promise = new Promise((resolve, reject)=> {{
     setInterval(() => {
+        let id = null;
         setInterval(() => {
-            
+            if(id === null) {
+                console.log('System did not put out of the report from the user');
+            } else {
+                console.log('user not login into on it!')
+            }
         }, 4000);
     }, 2000);
 }});
 promise
-.then(() => {
-
+.then((user) => {
+    console.log("user", user);
 })
-.catch(() =>{
-
+.catch((error) =>{
+    console.log(error, "error")
 })
-.finally(() =>{
-    
+.finally((resolve) =>{
+    console.log("resolve", resolve)
 })
