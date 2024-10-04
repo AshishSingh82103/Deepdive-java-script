@@ -40,6 +40,13 @@ let myFunc = function(newValue1, newValue2) {
     let userId = "832109";
     let password = "singh@82103";
     let login = true;
+    if(userId == "832109") {
+        console.log("userdefined");
+    } else if(password == "singh@82103") {
+        console.log("password created");
+    } else if(login == true) {
+        console.log
+    }
     throw Error("some message printed");
     let result = newValue1 + newValue2;
     return result;
