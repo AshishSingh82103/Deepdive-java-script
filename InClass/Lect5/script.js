@@ -45,7 +45,9 @@ let myFunc = function(newValue1, newValue2) {
     } else if(password == "singh@82103") {
         console.log("password created");
     } else if(login == true) {
-        console.log
+        console.log('login is true');
+    } else {
+        console.log('settings default');
     }
     throw Error("some message printed");
     let result = newValue1 + newValue2;
