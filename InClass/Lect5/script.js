@@ -57,7 +57,11 @@ let myFunc = function(newValue1, newValue2) {
 let result1 = myFunc(10, 3);
 console.log(result1);
 
-
+let promise = new Promise((resolve, reject)=> {{
+    setInterval(() => {
+        
+    }, 2000);
+}});
 
 
 
