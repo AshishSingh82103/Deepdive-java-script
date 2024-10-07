@@ -46,11 +46,11 @@ function calculator(a, b, action) {
         // throw Error('refernce error due to non-alignment')
         let res;
         if(action === 'add') {
-            // Google - server  google error add
+            // Google - server  (google error add)
             throw Error('google error add')
             res = a + b;
         } else if(action === 'sub') {
-            // Microsoft - server  micro error sub
+            // Microsoft - server  (micro error sub)
             // throw Error('micro error sub')
             res = a - b;
         } else if(action === 'multiplie') {
@@ -85,4 +85,6 @@ console.log(result2, 'sub'); // -1 sub
 let result3 = calculator(1, 2, 'multiplie');
 console.log(result3, 'multiplie'); // 2 multiplie
 
-// console.log(result1, result2, result3);
+console.log(result1, result2, result3);
+
+
