@@ -50,26 +50,37 @@ function calculator(a, b, action) {
             throw Error('google error add')
             res = a + b;
         } else if(action === 'sub') {
-            // Microsoft - server  microsoft error sub
+            // Microsoft - server  micro error sub
+            // throw Error('micro error sub')
             res = a - b;
         } else if(action === 'multiplie') {
-            // Digital - ocean server  digital ocean multiplie
+            // Digital - ocean server  digitalocean error multiplie
+            // throw Error('digitalocean error multiplie')
             res = a * b;
         }
         return res;
 
     } catch(error) {
-        console.log("error is here");
+        console.log("error is here"); // error is here 
+        console.log(error.message); // google error add
+
+        if(error.message === 'google error add') {
+            console.log('Google is giving error');
+        } else if (error.message === 'micro error sub') {
+            console.log('Micro error is given error')
+        } else if(error.message === 'digitalocean error multiplie') {
+            console.log('Digital ocean is giving error');
+        }
     }
 }
 
 let result1 = calculator(1, 2, 'add');
-console.log(result1, "add");
+console.log(result1, "add"); // Google is giving error
 
 let result2 = calculator(1, 2, 'sub');
-console.log(result2, 'sub');
+console.log(result2, 'sub'); // -1 sub
 
 let result3 = calculator(1, 2, 'multiplie');
-console.log(result3, 'multiplie');
+console.log(result3, 'multiplie'); // 2 multiplie
 
 // console.log(result1, result2, result3);
