@@ -12,9 +12,10 @@
 // console.log(b); // 13
 
 // ============ try and catch(debugg the code) ========================>
-    console.log('hello');
+    // console.log('hello');
 
 function sum(a, b) {
+
     //  Do something 
     // throw Error('Refernce Error due to non aligmnet'); 
 
@@ -26,7 +27,8 @@ function sum(a, b) {
         return c;
 
     } catch(error) {
-    console.log("hey there user how are you doing") // output-printed
+        alert('Something there'); // error handeling gracefully
+    // console.log("hey there user how are you doing") // output-printed
     // screen uhhh something went wrong
    
 }
