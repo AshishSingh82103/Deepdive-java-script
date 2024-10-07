@@ -14,31 +14,31 @@
 // ============ try and catch(debugg the code) ========================>
     // console.log('hello');
 
-function sum(a, b) {
+// function sum(a, b) {
 
-    //  Do something 
-    // throw Error('Refernce Error due to non aligmnet'); 
+//     //  Do something 
+//     // throw Error('Refernce Error due to non aligmnet'); 
 
     
-    try {
-        // do something
-        throw Error('Refernce Error due to non aligmnet'); 
-    let c = a + b;
-    return c;
+//     try {
+//         // do something
+//         throw Error('Refernce Error due to non aligmnet'); 
+//     let c = a + b;
+//     return c;
 
-    } catch(error) {
-        // alert('Something there'); // error handeling gracefully
-        console.log(error)
-        console.log("hey there user how are you doing") // output-printed
-    // screen uhhh something went wrong
+//     } catch(error) {
+//         // alert('Something there'); // error handeling gracefully
+//         console.log(error)
+//         console.log("hey there user how are you doing") // output-printed
+//     // screen uhhh something went wrong
    
-}
+// }
 
-}
+// }
 
 
-let result = sum(10, 20);
-console.log(result); // 30
+// let result = sum(10, 20);
+// console.log(result); // 30
 
 //  ==========function calcilator==============
 function calculator(a, b, action) {
@@ -47,12 +47,13 @@ function calculator(a, b, action) {
         let res;
         if(action === 'add') {
             // Google - server  google error add
+            throw Error('google error add')
             res = a + b;
         } else if(action === 'sub') {
-            // Microsoft - server  microsoft error add
+            // Microsoft - server  microsoft error sub
             res = a - b;
         } else if(action === 'multiplie') {
-            // Digital - ocean server  digital ocean add
+            // Digital - ocean server  digital ocean multiplie
             res = a * b;
         }
         return res;
@@ -63,7 +64,12 @@ function calculator(a, b, action) {
 }
 
 let result1 = calculator(1, 2, 'add');
-let result2 = calculator(1, 2, 'sub');
-let result3 = calculator(1, 2, 'multiplie');
+console.log(result1, "add");
 
-console.log(result1, result2, result3);
+let result2 = calculator(1, 2, 'sub');
+console.log(result2, 'sub');
+
+let result3 = calculator(1, 2, 'multiplie');
+console.log(result3, 'multiplie');
+
+// console.log(result1, result2, result3);
