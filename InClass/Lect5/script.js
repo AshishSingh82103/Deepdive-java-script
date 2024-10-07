@@ -28,7 +28,7 @@ function sum(a, b) {
 
     } catch(error) {
         alert('Something there'); // error handeling gracefully
-    // console.log("hey there user how are you doing") // output-printed
+    console.log("hey there user how are you doing") // output-printed
     // screen uhhh something went wrong
    
 }
