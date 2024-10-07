@@ -54,7 +54,7 @@ function calculator(a, b, action) {
             // throw Error('micro error sub')
             res = a - b;
         } else if(action === 'multiplie') {
-            // Digital - ocean server  digitalocean error multiplie
+            // Digital - ocean server digitalocean error multiplie(this error is given by server)
             // throw Error('digitalocean error multiplie')
             res = a * b;
         }
@@ -64,6 +64,8 @@ function calculator(a, b, action) {
         console.log("error is here"); // error is here 
         console.log(error.message); // google error add
 
+
+        // this is error which is access by user it's-slef.
         if(error.message === 'google error add') {
             console.log('Google is giving error');
         } else if (error.message === 'micro error sub') {
