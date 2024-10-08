@@ -164,10 +164,7 @@ console.log(result1, result2, result3);
          
 			} else {
                 console.log('Live reload enabled');
-                console.log('Slice of the reload user main');
-                console.log('Upgrade is the main coz of the main coz of the main code');
-                
-            }
+            } 
 		})();
 	}
 	else {
