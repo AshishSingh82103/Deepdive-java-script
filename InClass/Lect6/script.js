@@ -169,6 +169,7 @@ console.log(result1, result2, result3);
 	}
 	else {
 		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+		console.error('upgrade api server block in the scop of the global execution-scope');
 	} 
         
 
