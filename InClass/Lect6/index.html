@@ -9,41 +9,6 @@
     
 </body>
 <script src="./script.js">
-    function calculator(a, b, action){
-       try {
-        let res;
-        if(action === 'add') {
-            // goggle server error
-            throw Error('google server error');
-            res = a + b;
-        } else if (action === 'sub') {
-            // microsoft server error
-            // throw Error('microsoft server error') s  
-        
-            res = a - b;
-        } else if (action === 'multiplie') {
-            // throw Error('Aws server error')
-            // aws server error
-            res = a * b;
-        } else if (action === 'division') {
-            // throw Error('Digital-ocean seerver error')
-            // Digital-ocean server error
-            res = a / b;
-        }
-        return res;
-       } catch(error) {
-        console.log(error);
-       }
-    }
-
-    let result1 = calculator(10, 5, 'add');
-    console.log(result1);
-    let result2 = calculator(10, 5, 'sub');
-    console.log(result2);
-    let result3 = calculator(10, 5, 'multiplie');
-    console.log(result3);
-    let result4 = calculator(10, 5, 'division');
-    console.log(result4);
 </script>
 
 </html>
