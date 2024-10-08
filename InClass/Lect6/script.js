@@ -126,7 +126,15 @@ console.log(result1, result2, result3);
     }  
     let result = calling(userLogIn, password, apiAccount, value);
 
-    
+    console.log(result);
+
+    let userDefine = 'node.js';
+    if(value === userDefine) {
+        console.log('value interface');
+    }
+
+
+
 
 
 
