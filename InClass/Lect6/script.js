@@ -159,9 +159,15 @@ console.log(result1, result2, result3);
 			};
 			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
 				console.log('Live reload enabled.');
+                console.log('Live reload enabled');
 				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
          
-			}
+			} else {
+                console.log('Live reload enabled');
+                console.log('Slice of the reload user main');
+                console.log('Upgrade is the main coz of the main coz of the main code');
+                
+            }
 		})();
 	}
 	else {
