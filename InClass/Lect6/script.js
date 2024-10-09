@@ -196,3 +196,9 @@ console.log(254 + 225); // 479
 
 console.error(object);
 
+setInterval(() => {
+    
+    setTimeout(() =>{
+
+    },2000)
+},2000);
