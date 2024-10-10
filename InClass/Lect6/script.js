@@ -197,8 +197,16 @@ console.log(254 + 225); // 479
 console.error(object);
 
 setInterval(() => {
-    
+    let value = null;
+    if(value === null) {
+        console.log('new rule');
+    } else if(value === undefinded) {
+        console.log('refrence error');
+    } else {
+        console.log('new rule');
+    }
     setTimeout(() =>{
 
     },2000)
 },2000);  
+
