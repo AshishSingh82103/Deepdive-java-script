@@ -206,7 +206,12 @@ setInterval(() => {
         console.log('new rule');
     }
     setTimeout(() =>{
-
-    },2000)
+        let underWay = null;
+        if(underway === null) {
+            console.log('second rule');
+        } else if (underWay === undefined) {
+            console.log('second rule');
+        }
+    },2000);
 },2000);  
 
