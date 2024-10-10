@@ -215,3 +215,15 @@ setInterval(() => {
     },2000);
 },2000);  
 
+let b = TimeRanges(() => {
+    console.log('range is provided');
+})
+
+let arr = [1, 2, 3, 4, 5];
+console.log(arr.length);
+
+for(let i = 0; i < arr.length; i++) {
+    console.log(arr[i]);
+}
+
+console.log('new array will be created');
