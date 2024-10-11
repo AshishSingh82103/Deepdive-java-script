@@ -254,17 +254,15 @@ let apiObject = new Object(
         reportError: 
 
     },
-    {
+     {
        gravatar_id: "",
-       url: "https://api.github.com/users/AshishSingh82103",loctiong
-       html_url: "https://github.com/AshishSingh82103",
+       url: "https://api.github.com/users/AshishSingh82103",
+       'html_url': "https://github.com/AshishSingh82103",
        site_admin: false,
        type : "User",
        hireable: null,
     },
-    {
-        
-    }
+    
 )
 
 console.log(apiObject.gravatar_id);
