@@ -250,7 +250,7 @@ let apiObject = new Object(
     },
     {
        gravatar_id: "",
-       url: "https://api.github.com/users/AshishSingh82103",
+       url: "https://api.github.com/users/AshishSingh82103",loctiong
        html_url: "https://github.com/AshishSingh82103",
        site_admin: false,
        type : "User",
@@ -259,3 +259,6 @@ let apiObject = new Object(
 )
 
 console.log(apiObject.gravatar_id);
+apiObject.style_admin();
+apiObject.hireable();
+console.log(apiObject)
