@@ -252,7 +252,8 @@ let apiObject = new Object(
        gravatar_id: "",
        url: "https://api.github.com/users/AshishSingh82103",
        html_url: "https://github.com/AshishSingh82103",
-       
-
+       site_admin: false,
+       type : "User",
+       hireable: null,
     }
 )
