@@ -43,6 +43,7 @@ var a = 25;
 
 
 // let result = sum(10, 20);
+
 // console.log(result); // 30
 
 //  ==========function calcilator==============
@@ -224,6 +225,30 @@ console.log(arr.length);
 
 for(let i = 0; i < arr.length; i++) {
     console.log(arr[i]);
+    if(arr.length === 5) {
+        console.log('arr is defined');
+    } else if (arr.length <= 5) {
+        console.log('password is login');
+    } else if(arr.length >= 5) {
+        console.log('Not allow to access anyone');
+    } else {
+        console.log('user undefined');
+    }
 }
-
 console.log('new array will be created');
+
+let privacyPolicy = document.querySelector(body);
+privacyPolicy.DateOfCreation = new Date();
+console.log(privacyPolicy);
+
+let apiObject = new Object(
+    {
+        login: "AshishSingh82103",
+        id: 117755948,
+        node_id: "U_kgDOBwTQLA",
+        avatar_url: "https://avatars.githubusercontent.com/u/117755948?v=4",
+    },
+    {
+       
+    }
+)
