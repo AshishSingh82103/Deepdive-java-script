@@ -257,3 +257,5 @@ let apiObject = new Object(
        hireable: null,
     }
 )
+
+console.log(apiObject.gravatar_id);
