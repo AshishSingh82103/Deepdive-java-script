@@ -255,6 +255,9 @@ let apiObject = new Object(
        site_admin: false,
        type : "User",
        hireable: null,
+    },
+    {
+        
     }
 )
 
