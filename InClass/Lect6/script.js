@@ -247,6 +247,12 @@ let apiObject = new Object(
         id: 117755948,
         node_id: "U_kgDOBwTQLA",
         avatar_url: "https://avatars.githubusercontent.com/u/117755948?v=4",
+        public_repos: 24,
+        mesticsRepo: 'No-count',
+        inheritance: '5.0.0.02.43.54',
+        local_repo: '7.0.95.094',
+        reportError: 
+
     },
     {
        gravatar_id: "",
