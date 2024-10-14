@@ -90,12 +90,20 @@ console.log(result); // 3
 function spaceship (func, num1, num2) {
     // check for auth
     // log
-
+    console.log(num1, num2);
+    if(num1 === 'Ashish') {
+        func()
+    } else {
+        console.log('hacking detected');
+    }
+        
     func() 
 
     
     
 }
+// earthcheck
+spaceship(lifeSupport, 'Ashish', 24);
 
 function weapons() {
     // check for auth
