@@ -20,8 +20,3 @@ function sum(a, b) {
 const result = sum(1, 2);
 console.log(result);
 
-console.log(a);
-var a = 12;
-
-console.log(b);
-let b = 12;
