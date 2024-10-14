@@ -9,13 +9,19 @@
 // const c = 25;
 
 //  =========== Start debugging execute ==============
-var a = 12;
-console.log(a);
+// var a = 12;
+// console.log(a);
 
 function sum(a, b) {
-    let c = a + b
+    var c = a + b
     return c;
 }
 
 const result = sum(1, 2);
 console.log(result);
+
+console.log(a);
+var a = 12;
+
+console.log(b);
+let b = 12;
