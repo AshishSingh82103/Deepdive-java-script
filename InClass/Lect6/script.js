@@ -92,3 +92,5 @@ let result3 = calculator(1, 2, 'multiplie');
 console.log(result3, 'multiplie'); // 2 multiplie
 
 console.log(result1, result2, result3);
+
+
