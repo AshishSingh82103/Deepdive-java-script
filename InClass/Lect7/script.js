@@ -111,7 +111,7 @@ function weapons() {
 }
 
 function lifeSupport() {
-    console.log('lifesupport')
+    console.log('lifesupport');
 }
 
 function food() {
