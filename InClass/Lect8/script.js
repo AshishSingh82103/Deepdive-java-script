@@ -119,11 +119,17 @@ function join(a, b) {
 loggedIn(join);
 
 // ------------ higher-order function ----------------
+//  1. The function which can return a function is higher-order-function
+//  2. The function which can accept a function as an argument
 
 function calculatorMotherEarth(condition) {
     if(condition === 'add') {
         return function(a, b) {
             return a + b;
+        }
+    } else if (condition === 'sub') {
+        return function(a, b) {
+            return a - b;
         }
     }
 }
