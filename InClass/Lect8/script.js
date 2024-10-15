@@ -62,16 +62,61 @@ const sum = function(a, b) {
 //     console.log('hey there');
 // }
 
-// abc
-// ƒ () {
+// abc o/p
+// f () {
 //     console.log('hey there');
 // }
 
-// abc();
-// VM172:2 hey there
+// abc(); o/p
+// hey there
 // undefined
+
+// let abc = function() {
+//     console.log('abc')
+// }
+// abc(); // abc
+// abc = null;
+
+// abc(); // abc is not a function
  
 
+function abc() {
+    console.log('abc')
+}
+var abc;
+abc = function() {
+    console.log('abc');
+}
+
+// -------- out-put ---------
+// f () {
+//     console.log('abc');
+// }
+
+
+// ----------- Arrow - function ------------
+
+const sumArrow = (a, b) => {
+    return a + b;
+}
+let resultArrow = sumArrow(3, 5);
+console.log(resultArrow, 'Sum-Arrow'); // 8 Sum-Arrow
+
+
+// ----------- call-back function -----------
+function loggedIn(callBackFunction) {
+    //  Please do work
+    console.log('loggin');
+    callBackFunction();
+
+}
+
+function join(a, b) {
+    console.log(a + b);
+    // return undefined; // hideen when we not give the return any value
+
+}
+loggedIn(join);
 
 
 
