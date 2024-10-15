@@ -18,15 +18,15 @@ function loggin(callBackFunc) {
     // log
     console.log('loggin'); // loggin
     callBackFunc(1, 2);
-
 }
 
 function sum(a, b) {
     console.log(a + b); // 3
     return a + b;
-
 }
+loggin(sum); 
 
-loggin(sum);
+
+
 
 
