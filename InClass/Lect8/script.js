@@ -118,6 +118,25 @@ function join(a, b) {
 }
 loggedIn(join);
 
+// ------------ higher-order function ----------------
+
+function calculatorMotherEarth(condition) {
+    if(condition === 'add') {
+        return function(a, b) {
+            return a + b;
+        }
+    }
+}
+let functionAdd = calculatorMotherEarth('add'); 
+console.log('returned function ---------');
+console.log(functionAdd);
+
+
+
+
+
+
+
 
 
 
