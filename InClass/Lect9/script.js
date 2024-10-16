@@ -89,14 +89,72 @@ const arr2 = [1, 2, 3, 4, 5, 6, 7, 8];
 
 // 5. sort => Sorts an array in place. This method mutates the array and returns a reference to the same array.
 
-let orgArr = [1, 5, 7, 3, 2, 9, 8];
-console.log(orgArr); // [1, 5, 7, 3, 2, 9, 8]
+// let orgArr = [1, 5, 7, 3, 2, 9, 8];
+// console.log(orgArr, 'org array before sorting'); // [1, 5, 7, 3, 2, 9, 8]
 
 
-let answerSortedArray = orgArr.sort();
-console.log(answerSortedArray); // [1, 2, 3, 5, 7, 8, 9]
+// let answerSortedArray = orgArr.sort();
+// console.log(answerSortedArray, 'org array after sorting'); // [1, 2, 3, 5, 7, 8, 9]
 
-console.log(orgArr === answerSortedArray, "both are they same"); // true both are they same only replce the array
+// console.log(orgArr === answerSortedArray, "both are they same"); // true both are they same only replce the array
+
+
+// let originalArray = [1, 5, 7, 3, 2, 9, 45, 21, 11, 19, 103, 391, 231];
+// console.log(originalArray);
+
+// let ansAfterSort = originalArray.sort();
+// console.log(ansAfterSort); // [1, 103, 11, 19, 2, 21, 231, 3, 391, 45, 5, 7, 9]
+
+
+// comparator
+// originalArray.sort((a, b) => a - b) // asecnding order
+// originalArray.sort((a, b) => b - a) // descending order
+
+// console.log(originalArray); // [1, 2, 3, 5, 7, 9, 11, 19, 21, 45, 103, 231, 391]
+
+
+// 6. Shift  
+//  => shift and unshift is just to similiar to push and pop but shift and unshift does it operation in the start
+
+// console.log(arr1);
+
+// arr1.shift();
+
+// console.log(arr1); // [2, 3, 4, 5, 6, 7, 8]
+
+// 7. unshift
+
+// console.log(arr1);
+
+// arr1.unshift(0);
+
+// console.log(arr1); // [0, 1, 2, 3, 4, 5, 6, 7, 8]
+
+
+// -------------  Looping ------------------
+
+// 1. for , while
+
+// for (let i = 0; i < arr1.length; i++) {
+//     console.log(arr1[i]);
+// }
+
+// 2. for of loop
+
+let arrOne = [10, 2, 31, 42, 5, 6, 7, 8];
+// for (let item of arrOne) {
+//     console.log(item); // 
+// }
+
+
+// 3. for in loop
+
+for (let item in arrOne) {
+    console.log(item);
+}
+
+
+
 
 
 
