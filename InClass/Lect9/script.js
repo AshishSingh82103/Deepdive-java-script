@@ -34,7 +34,9 @@ console.log(isEqual); // false (beacuse arrr sotred in heap and they can get onl
 // 1. push
 
 let lengthOfArr = arr1.push(7);
-console.log(arr1);
+console.log(arr1); // [1, 2, 3, 4, 5,  6, 7, 8, 9]
 console.log(lengthOfArr);
 
-let 
+const lenghtOfArr2 = arr2.push(9);
+console.log(arr2); // [1, 2, 3, 4, 5,  6, 7, 8, 9]
+console.log(lenghtOfArr2); // 9
