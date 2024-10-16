@@ -21,7 +21,7 @@
 
 
 
-// 1. for each
+// 1. -------------for each ------------ = > just ittrate from left to right every element poistion and it's self hole array
 
 let arr = [19, 21, 37, 44, 51, 69, 77, 89];
 
@@ -31,15 +31,49 @@ let arr = [19, 21, 37, 44, 51, 69, 77, 89];
 // 2. callback -> () =>{printout the element} // user function
 
 
-arr.forEach((value, index, arr) => {
-    console.log(value, index, arr, 'hey there i am traversing');
+// arr.forEach((value, index, arr) => {
+//     console.log(value, index, arr, 'hey there i am traversing');
 
-})
+// })
 
-// function sum() {
+// arr.forEach(() => {
+//     console.log('hello world') // i should see hello world 8 times.
+// })
 
+// arr.forEach((value, index) => {
+//     console.log(value, "at index", index);
+// })
+
+//  --------- execute my function ------------
+
+// function ashishFunction(value, index) {
+//     console.log(value, "at index", index);
 // }
-// sum() // me calling
+
+// arr.forEach(ashishFunction)
+
+
+// 2. -------------- Map ----------------------
+
+
+
+
+
+
+function sum(a, b) {
+    return a + b;
+}
+let res1 = sum(1, 2) // me calling
+console.log(res1); // 3
+
+let sumFunc = (a, b) =>{
+    return a + b;
+}
+
+let res2 = sumFunc(1, 2);
+console.log(res2); // 3
+
+
 
 
 
