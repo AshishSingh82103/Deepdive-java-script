@@ -143,15 +143,36 @@ const arr2 = [1, 2, 3, 4, 5, 6, 7, 8];
 
 let arrOne = [10, 2, 31, 42, 5, 6, 7, 8];
 // for (let item of arrOne) {
-//     console.log(item); // 
+//     console.log(item); // print the value
 // }
 
 
 // 3. for in loop
 
 for (let item in arrOne) {
-    console.log(item);
+    console.log(item); // print the index(key)
 }
+
+//  --------------- Extra function Array callbacks ---------
+
+// 1. filter
+
+let arrTwo = [5, 8, 900, 3, 1, 2, 18, 19, 20, 25, 100, 189];
+
+function filterAshihs() {
+
+}
+
+// arrTwo.filter(function() {
+
+// })'
+
+// arrow - function
+let ans = arrTwo.filter((item) => {
+    return item > 19;
+})
+
+console.log(ans); // [ 900, 20, 25, 100, 189 ]
 
 
 
