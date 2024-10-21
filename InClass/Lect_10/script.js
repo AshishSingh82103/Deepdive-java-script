@@ -50,10 +50,42 @@ let arr = [19, 21, 37, 44, 51, 69, 77, 89];
 //     console.log(value, "at index", index);
 // }
 
-// arr.forEach(ashishFunction)
+// arr.forEach(ashishFunction);
 
 
 // 2. -------------- Map ----------------------
+
+const array1 = [1, 4, 9, 16];
+
+// Pass a function to map
+const map1 = array1.map((x) => x * 2);
+
+console.log(map1);
+// Expected output: Array [2, 8, 18, 32]
+
+let arr1 = [4, 6, 8, 10];
+
+const map2 = array1.map((x) => x % 2);
+console.log(map2);
+
+const kvArray = [
+    { key: 1, value: 10 },
+    { key: 2, value: 20 },
+    { key: 3, value: 30 },
+  ];
+  
+  const reformattedArray = kvArray.map(({ key, value }) => ({ [key]: value }));
+  
+  console.log(reformattedArray); // [{ 1: 10 }, { 2: 20 }, { 3: 30 }]
+  console.log(kvArray);
+  // [
+  //   { key: 1, value: 10 },
+  //   { key: 2, value: 20 },
+  //   { key: 3, value: 30 }
+  // ]
+
+
+
 
 
 
