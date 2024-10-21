@@ -57,7 +57,7 @@
 
 let arr = [19, 21, 37, 44, 51, 69, 77, 89];
 
-arr.map((value, index, arr) => {
+let beautifulArray = arr.map((value, index, arr) => {
     console.log(value + " map at index of", index);
     
     let rank = ''
@@ -76,6 +76,7 @@ arr.map((value, index, arr) => {
 });
 
 console.log(arr);
+console.log(beautifulArray);
 
 
 
