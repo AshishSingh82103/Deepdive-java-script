@@ -23,7 +23,7 @@
 
 // 1. -------------for each ------------ = > just ittrate from left to right every element poistion and it's self hole array
 
-let arr = [19, 21, 37, 44, 51, 69, 77, 89];
+// let arr = [19, 21, 37, 44, 51, 69, 77, 89];
 
 // 1. parent => forEach
 // => for each going to evry index
@@ -55,6 +55,38 @@ let arr = [19, 21, 37, 44, 51, 69, 77, 89];
 
 // 2. -------------- Map ----------------------
 
+let arr = [19, 21, 37, 44, 51, 69, 77, 89];
+
+// <22 -> Under-graduate
+// <30 > 22 -> pass out peeps
+//  >30 -> old people
+
+// {
+//     age: 19,
+//     rank: "Under-graduate"
+// }
+// {
+//     age: 21,
+//     rank: "Under-graduate"
+// }
+// {
+//     age: 37,
+//     rank: "Under-graduate"
+// }
+
+// let arr1 = [
+//     {name: "Ashish",
+//         age: 27
+//     },
+//     {name: "Ankit",
+//         age: 30
+//     },
+//     {name: "neha",
+//         age: 32
+//     },
+
+// ];
+// let arr2 = ["Ashish", "neha", "ankit"];
 
 
 
@@ -66,18 +98,18 @@ let arr = [19, 21, 37, 44, 51, 69, 77, 89];
 
 
 
-function sum(a, b) {
-    return a + b;
-}
-let res1 = sum(1, 2) // me calling
-console.log(res1); // 3
+// function sum(a, b) {
+//     return a + b;
+// }
+// let res1 = sum(1, 2) // me calling
+// console.log(res1); // 3
 
-let sumFunc = (a, b) =>{
-    return a + b;
-}
+// let sumFunc = (a, b) =>{
+//     return a + b;
+// }
 
-let res2 = sumFunc(1, 2);
-console.log(res2); // 3
+// let res2 = sumFunc(1, 2);
+// console.log(res2); // 3
 
 
 
