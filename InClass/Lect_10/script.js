@@ -57,6 +57,28 @@
 
 let arr = [19, 21, 37, 44, 51, 69, 77, 89];
 
+arr.map((value, index, arr) => {
+    console.log(value + " map at index of", index);
+    
+    let rank = ''
+    if(value < 22) {
+        rank = 'undergrad'
+    } else if (value >= 22 && value < 30) {
+        rank= 'passrd-out'
+    } else if (value >= 30) {
+        rank = 'Experienced people'
+    }
+    let obj = {
+        age: value,
+        rank: rank
+    }
+    return obj;
+});
+
+console.log(arr);
+
+
+
 // <22 -> Under-graduate
 // <30 > 22 -> pass out peeps
 //  >30 -> old people
