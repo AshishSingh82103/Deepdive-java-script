@@ -64,7 +64,7 @@ let beautifulArray = arr.map((value, index, arr) => {
     if(value < 22) {
         rank = 'undergrad'
     } else if (value >= 22 && value < 30) {
-        rank= 'passrd-out'
+        rank= 'passed-out'
     } else if (value >= 30) {
         rank = 'Experienced people'
     }
@@ -78,6 +78,30 @@ let beautifulArray = arr.map((value, index, arr) => {
 console.log(arr);
 console.log(beautifulArray);
 
+let arr2 = [10, 15, 25, 30, 35, 40, 45];
+
+
+
+  let modifiedArray = arr2.map((value, index) =>{
+    console.log(value, "map at index", index);
+
+    let rank = ''
+    if(value < 25) {
+        rank = 'undergraduate'
+    } else if(value >= 25 && value < 35) {
+        rank = 'passed-out'
+    } else if (value >= 35 && value < 45) {
+        rank = 'Experineced'
+    } else if(value >= 45) {
+        rank = "Retired-out"
+    }
+    let obj = {
+        value: value,
+        rank: rank
+    }
+    return obj;
+})
+console.log(modifiedArray);
 
 
 // <22 -> Under-graduate
