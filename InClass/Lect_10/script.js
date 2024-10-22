@@ -103,6 +103,35 @@ let arr2 = [10, 15, 25, 30, 35, 40, 45];
 })
 console.log(modifiedArray);
 
+let arr3 = [12, 20, 34, 43, 57, 86, 92];
+
+let simplifiedArr = arr3.map((value, index) =>{
+    console.log(value, "map at index of", index);
+
+    let rank = '';
+    if(value < 20) {
+        rank = 'teenage';
+    } else if(value >= 20 && value < 43) {
+        rank = 'passout'
+    } else if (value >= 43 && value < 57) {
+        rank = 'empployed'
+    } else if(value >= 57 && value < 86) {
+        rank = 'retired'
+    } else if ( value >= 86 && value < 92) {
+        rank = 'old people'
+    } else if(value >= 92) {
+        rank = 'undefined people'
+    }
+
+    let obj = {
+        value: value,
+        rank: rank
+    }
+    return obj;
+
+
+});
+console.log(simplifiedArr);
 
 // <22 -> Under-graduate
 // <30 > 22 -> pass out peeps
