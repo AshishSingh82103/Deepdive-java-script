@@ -55,83 +55,86 @@
 
 // 2. -------------- Map ----------------------
 
-let arr = [19, 21, 37, 44, 51, 69, 77, 89];
+// let arr = [19, 21, 37, 44, 51, 69, 77, 89];
 
-let beautifulArray = arr.map((value, index, arr) => {
-    console.log(value + " map at index of", index);
+// let beautifulArray = arr.map((value, index, arr) => {
+//     console.log(value + " map at index of", index);
     
-    let rank = ''
-    if(value < 22) {
-        rank = 'undergrad'
-    } else if (value >= 22 && value < 30) {
-        rank= 'passed-out'
-    } else if (value >= 30) {
-        rank = 'Experienced people'
-    }
-    let obj = {
-        age: value,
-        rank: rank
-    }
-    return obj;
-});
+//     let rank = ''
+//     if(value < 22) {
+//         rank = 'undergrad'
+//     } else if (value >= 22 && value < 30) {
+//         rank= 'passed-out'
+//     } else if (value >= 30) {
+//         rank = 'Experienced people'
+//     }
+//     let obj = {
+//         age: value,
+//         rank: rank
+//     }
+//     return obj;
+// });
 
-console.log(arr);
-console.log(beautifulArray);
+// console.log(arr);
+// console.log(beautifulArray);
 
-let arr2 = [10, 15, 25, 30, 35, 40, 45];
-
-
-
-  let modifiedArray = arr2.map((value, index) =>{
-    console.log(value, "map at index", index);
-
-    let rank = ''
-    if(value < 25) {
-        rank = 'undergraduate'
-    } else if(value >= 25 && value < 35) {
-        rank = 'passed-out'
-    } else if (value >= 35 && value < 45) {
-        rank = 'Experineced'
-    } else if(value >= 45) {
-        rank = "Retired-out"
-    }
-    let obj = {
-        value: value,
-        rank: rank
-    }
-    return obj;
-})
-console.log(modifiedArray);
-
-let arr3 = [12, 20, 34, 43, 57, 86, 92];
-
-let simplifiedArr = arr3.map((value, index) =>{
-    console.log(value, "map at index of", index);
-
-    let rank = '';
-    if(value < 20) {
-        rank = 'teenage';
-    } else if(value >= 20 && value < 43) {
-        rank = 'passout'
-    } else if (value >= 43 && value < 57) {
-        rank = 'empployed'
-    } else if(value >= 57 && value < 86) {
-        rank = 'retired'
-    } else if ( value >= 86 && value < 92) {
-        rank = 'old people'
-    } else if(value >= 92) {
-        rank = 'undefined people'
-    }
-
-    let obj = {
-        value: value,
-        rank: rank
-    }
-    return obj;
+// let arr2 = [10, 15, 25, 30, 35, 40, 45];
 
 
-});
-console.log(simplifiedArr);
+
+//   let modifiedArray = arr2.map((value, index) =>{
+//     console.log(value, "map at index", index);
+
+//     let rank = ''
+//     if(value < 25) {
+//         rank = 'undergraduate'
+//     } else if(value >= 25 && value < 35) {
+//         rank = 'passed-out'
+//     } else if (value >= 35 && value < 45) {
+//         rank = 'Experineced'
+//     } else if(value >= 45) {
+//         rank = "Retired-out"
+//     }
+//     let obj = {
+//         value: value,
+//         rank: rank
+//     }
+//     return obj;
+// })
+// console.log(modifiedArray);
+
+// let arr3 = [12, 20, 34, 43, 57, 86, 92];
+
+// let simplifiedArr = arr3.map((value, index) =>{
+//     console.log(value, "map at index of", index);
+
+//     let rank = '';
+//     if(value < 20) {
+//         rank = 'teenage';
+//     } else if(value >= 20 && value < 43) {
+//         rank = 'passout'
+//     } else if (value >= 43 && value < 57) {
+//         rank = 'empployed'
+//     } else if(value >= 57 && value < 86) {
+//         rank = 'retired'
+//     } else if ( value >= 86 && value < 92) {
+//         rank = 'old people'
+//     } else if(value >= 92) {
+//         rank = 'undefined people'
+//     }
+
+//     let obj = {
+//         value: value,
+//         rank: rank
+//     }
+//     return obj;
+
+
+// });
+// console.log(simplifiedArr);
+
+// ---------- this is for the refrences ----------
+
 
 // <22 -> Under-graduate
 // <30 > 22 -> pass out peeps
@@ -163,6 +166,28 @@ console.log(simplifiedArr);
 
 // ];
 // let arr2 = ["Ashish", "neha", "ankit"];
+
+// 3 --------------- filter ----------------
+
+const words = ["seeks", 'ambush', 'reliegh', 'show']
+
+const result = words.filter((words) => words.length > 4);
+console.log(result); // [ 'seeks', 'ambush', 'reliegh' ]
+
+
+const array = [-3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
+
+function isPrime(num) {
+  for (let i = 2; num > i; i++) {
+    if (num % i === 0) {
+      return false;
+    }
+  }
+  return num > 1;
+}
+
+console.log(array.filter(isPrime)); // [2, 3, 5, 7, 11, 13]
+
 
 
 
