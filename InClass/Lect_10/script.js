@@ -192,19 +192,6 @@ console.log(array.filter(isPrime)); // [2, 3, 5, 7, 11, 13]
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 // function sum(a, b) {
 //     return a + b;
 // }
