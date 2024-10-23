@@ -315,6 +315,7 @@ const sumWithintialValue = array1.reduce((accumulator, currentValue) => {
 })
 console.log(sumWithintialValue);
 
+// -------------- 2nd example -----------------
 const array2 = [10, 30, 45, 50];
 
 const initiativeValue1 = 0;
@@ -323,6 +324,7 @@ const sumOfarray = array2.reduce((accumulator, currentvalue)=> {
   return initiativeValue;
 })
 console.log(sumOfarray);
+
 
   
 
