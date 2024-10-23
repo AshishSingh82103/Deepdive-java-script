@@ -278,14 +278,36 @@ console.log(filterItems(apiUser, "an"));
 // console.log(indexOf99); // 2
 
 // -------- FInd last --------
-let findLastArray = [1,2,99,3,4,5,6,7,99,104,231,89,0];
 
-let findLastResult = findLastArray.findLast((value) =>{
-  if(value === 99) {
-    return true;
-  }
-})
-console.log(findLastResult)
+// let findLastArray = [1,2,99,3,4,5,6,7,99,104,231,89,0];
+
+// let findLastResult = findLastArray.findLast((value) =>{
+//   if(value === 99) {
+//     return true;
+//   }
+// })
+// console.log(findLastResult);
+
+// ----- array.fill() -----------
+// const array1 = [1, 2, 3, 4, 5];
+
+// // Fill with 0 from position 2 until position 4
+
+// console.log(array1.fill(0, 2, 4));
+
+// // Fill with 5 from position 1
+
+// console.log(array1.fill(5, 1));
+
+// // fill with 6 in above the array
+
+// console.log(array1.fill(6));
+
+
+// ------------ array.reduce different from the others ---------
+const array1 = [1, 2, 3, 4, 5];
+
+
   
 
 
