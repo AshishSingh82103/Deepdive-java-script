@@ -188,8 +188,58 @@ function isPrime(num) {
 
 console.log(array.filter(isPrime)); // [2, 3, 5, 7, 11, 13]
 
+const filterd = [12, 5, 8, 130, 44];
 
+function isBigEnough(value) {
+  return value >= 10;
+}
+const result1 = filterd.filter(isBigEnough);
+console.log(result1);
 
+// ------------ Filtering invalid entries from JSON -----------------------
+
+const arr4 = [
+  {id: 15},
+  {id: -1},
+  { id: 0 },
+  { id: 3 },
+  { id: 12.2 },
+  {},
+  { id: null },
+  { id: NaN },
+  { id: "undefined" },
+
+]
+
+let invalidEntries = 0;
+
+function filterByID(item) {
+  if(Number.isFinite(item.id) && item.id !== 0) {
+    return true;
+  }
+  invalidEntries++;
+  return false;
+}
+
+const arrByID = arr4.filter(filterByID);
+
+console.log("Filtered Array\n", arrByID);
+
+console.log("Number of Invalid Entries =", invalidEntries);
+
+//  ----------- Searching in array ------------------
+const apiUser = ["ashish", "ankit", "neha", "devendra"];
+
+function filterItems(apiUser, query) {
+  return apiUser.filter((el) => el.toLowerCase().includes(query.toLowerCase()));
+}
+
+console.log(filterItems(apiUser, "ap")); 
+console.log(filterItems(apiUser, "an"));
+
+/**
+ * Filter array items based on search criteria (query)
+ */
 
 
 // function sum(a, b) {
