@@ -307,6 +307,22 @@ console.log(filterItems(apiUser, "an"));
 // ------------ array.reduce different from the others ---------
 const array1 = [1, 2, 3, 4, 5];
 
+const initiativeValue = 0;
+const sumWithintialValue = array1.reduce((accumulator, currentValue) => {
+  let initiativeValue = accumulator + currentValue;
+
+    return initiativeValue;
+})
+console.log(sumWithintialValue);
+
+const array2 = [10, 30, 45, 50];
+
+const initiativeValue1 = 0;
+const sumOfarray = array2.reduce((accumulator, currentvalue)=> {
+  let initiativeValue = accumulator + currentvalue;
+  return initiativeValue;
+})
+console.log(sumOfarray);
 
   
 
