@@ -237,9 +237,60 @@ function filterItems(apiUser, query) {
 console.log(filterItems(apiUser, "ap")); 
 console.log(filterItems(apiUser, "an"));
 
-/**
- * Filter array items based on search criteria (query)
- */
+// -------------  array .find --------------
+
+// let findArray = [1,2,3,4,5,6,7,99,104,231,89,0];
+
+// let resultFindArray = findArray.find((value) =>{
+//   if(value === 999) {
+//     return true
+//   }
+//   // if(value === 999) {
+//   //   return true
+//   // } // undefined
+// })
+// console.log(resultFindArray); // 99
+
+// --------- FInd index ---------
+//  Find and findindex -> its going to search from start
+
+// let findIndexArray = [1,2,3,4,5,6,7,99,104,231,89,0];
+
+// let indexOf99 = findIndexArray.findIndex((value) => {
+//   if(value === 99) {
+//     return true
+//   }
+//   // if(value === 999) {
+//   //   return true
+//   // } // -1
+// })
+// console.log(indexOf99); // 7
+
+
+// let findIndexArray = [1,2,99,3,4,5,6,7,99,104,231,89,0];
+
+// let indexOf99 = findIndexArray.findIndex((value) => {
+//   if(value === 99) {
+//     return true
+//   }
+  
+// })
+// console.log(indexOf99); // 2
+
+// -------- FInd last --------
+let findLastArray = [1,2,99,3,4,5,6,7,99,104,231,89,0];
+
+let findLastResult = findLastArray.findLast((value) =>{
+  if(value === 99) {
+    return true;
+  }
+})
+console.log(findLastResult)
+  
+
+
+
+
 
 
 // function sum(a, b) {
