@@ -9,7 +9,7 @@
 // console.timeEnd("answer time");
 
 
-// ---------------- Dom (Data object manipulation) --------------
+// ---------------- Dom (Data object manipulation)  = 13 --------------
 
 let documents = document.querySelector('h1');
 
@@ -22,7 +22,8 @@ documents.style.padding = "12px";
 documents.style.margin = "20px";
 
 inputButtons.style.backgroundColor = "red";
-inputButtons.style.border = "2px";
+inputButtons.style.border = "10px solid green";
+inputButtons.style.borderRadius = "5px";
 
 
 
