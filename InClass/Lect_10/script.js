@@ -347,6 +347,9 @@ function reducer(accumlator, currentValue, index) {
 array.reduce(reducer);
 
 
+[13, 17, 30, 35].reduce((accumulator, currentValue) => accumulator + currentValue, 10);
+console.log([13, 17, 30, 35].reduce((accumulator, currentValue) => accumulator + currentValue, 10)
+);
 
 
 
