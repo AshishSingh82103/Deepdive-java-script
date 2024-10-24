@@ -352,6 +352,36 @@ console.log([13, 17, 30, 35].reduce((accumulator, currentValue) => accumulator +
 );
 
 
+console.log('print User bet in count form the startinig value of its own fecthing error'); //print User bet in count form the startinig value of its own fecthing error
+
+let finalResut = [10, 20, 30, 40, 50];
+
+finalResut.forEach((value, index, finalResut) =>{
+  console.log(`value: ${value}, index: ${index}, finalResult: ${finalResut}`)
+})
+
+// -------------------  Other way -----------------
+const names = ["Alice", "Bob", "Tiff", "Bruce", "Alice"];
+const countNames = names.reduce((allNames, name) => {
+  const currCount = object.hasOwn(allNames, name) ? allNames[name] : 0;
+  return {
+    ...allNames,
+    [name]: currCount + 1,
+  }
+  
+})
+
+function getGroupRowModel() {
+  console.time('everything');
+
+  // ..
+
+  console.time()
+}
+
+
+
+
 
 
 
