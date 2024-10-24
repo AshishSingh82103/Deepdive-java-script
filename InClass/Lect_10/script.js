@@ -359,6 +359,13 @@ console.log([13, 17, 30, 35].reduce((accumulator, currentValue) => accumulator +
 
 
 
+
+
+
+
+
+
+
   
 
 
