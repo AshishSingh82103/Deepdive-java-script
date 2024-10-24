@@ -376,7 +376,8 @@ function getGroupRowModel() {
 
   // ..
 
-  console.time()
+
+  console.time();
 }
 
 
