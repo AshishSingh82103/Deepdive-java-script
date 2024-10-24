@@ -316,6 +316,37 @@ const sumWithintialValue = array1.reduce((accumulator, currentValue) => {
 })
 console.log(sumWithintialValue);
 
+// ---- reduce the method of the accumlator ------
+
+const array2 = [20, 40, 55, 60];
+
+const value =  0;
+const valueWithOther = array2.reduce((accumulator, currentValue) => {
+    let value = accumulator + currentValue
+    return value;
+})
+console.log(valueWithOther); // 175
+
+//  ------------ 2nd example --------------
+
+const getMax = (a, b) => Math.max(a, b);
+
+const array3 = [2, 3, 4, 5];
+array3.fill(2);
+console.log(array3); // [2, 2, 2, 2]
+
+
+const arrya5 = [25, 30, 35, 40, 45];
+
+function reducer(accumlator, currentValue, index) {
+
+  const returns = accumlator + currentValue;
+  console.log(`accumulator: ${accumlator}, currentValue: ${currentValue}, index: ${index}, returns: ${returns}`)
+  return returns;
+}
+array.reduce(reducer);
+
+
 
 
 
