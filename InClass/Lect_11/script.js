@@ -27,6 +27,13 @@ inputButtons.style.margin = '12px';
 inputButtons.style.borderRadius = '10px';
 inputButtons.style.border = 'solid 2px red';
 
+outputButtons.style.backgroundColor = 'pink';
+outputButtons.style.padding = '12px';
+outputButtons.style.margin = '35px';
+outputButtons.style.borderRadius = '10px';
+outputButtons.style.border = 'solid 2px red';
+
+let order_list = documents.querySelector('#ordered_list');
 
 
 
