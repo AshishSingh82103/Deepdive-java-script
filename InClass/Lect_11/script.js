@@ -11,29 +11,87 @@
 
 // ---------------- Dom (Data object manipulation)  = 13 --------------
 
-let documents = document.querySelector('h1');
 
-let inputButtons = document.querySelector('.styled');
+//  ----------------- Rading and modified the tree --------------------
 
-let outputButtons = documents.querySelector('.styled_1');
 
-documents.style.backgroundColor = "yellow";
-documents.style.padding = "12px";
-documents.style.margin = "20px";
+function change() {
+     // document.getElementsByTagName("h2") returns a NodeList of the <h2>
+    // elements in the document, and the first is number 0:
+    const header = document.getElementsByTagName('h2').item(0);
 
-inputButtons.style.backgroundColor = "blue";
-inputButtons.style.padding = "25px";
-inputButtons.style.margin = '12px';
-inputButtons.style.borderRadius = '10px';
-inputButtons.style.border = 'solid 2px red';
+    // the first child of header is the text node.
+    header.firstChild.data = 'A Dynamic document'
 
-outputButtons.style.backgroundColor = 'pink';
-outputButtons.style.padding = '12px';
-outputButtons.style.margin = '35px';
-outputButtons.style.borderRadius = '10px';
-outputButtons.style.border = 'solid 2px red';
+    // Now header is dynamic document.
 
-let order_list = documents.querySelector('#ordered_list');
+    // Access the first paragraph .
+
+    const para = document.getElementsByTagName("p").item(0);
+    para.firstChild.data = "This is first paragraph.";
+
+    // Create a new text for the second paragraph
+
+    const newText = document.createTextNode('This is the second paragraph.')
+
+    const newElement = document.createElement("p");
+
+
+    // create a new element with second paragraph.
+    newElement.appendChild(newText);
+
+    // add to newElement in the next para with the appendChlid.
+    para.parentNode.appendChild(newElement);
+
+
+}
+
+
+// --------------- Creating a tree --------------
+const root = document.createElement('html');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let documents = document.querySelector('h1');
+
+// let inputButtons = document.querySelector('.styled');
+
+// let outputButtons = documents.querySelector('.styled_1');
+
+// documents.style.backgroundColor = "yellow";
+// documents.style.padding = "12px";
+// documents.style.margin = "20px";
+
+// inputButtons.style.backgroundColor = "blue";
+// inputButtons.style.padding = "25px";
+// inputButtons.style.margin = '12px';
+// inputButtons.style.borderRadius = '10px';
+// inputButtons.style.border = 'solid 2px red';
+
+// outputButtons.style.backgroundColor = 'pink';
+// outputButtons.style.padding = '12px';
+// outputButtons.style.margin = '35px';
+// outputButtons.style.borderRadius = '10px';
+// outputButtons.style.border = 'solid 2px red';
+
+// function genrateTable() {
+//     const tb1 = document.createElement('table');
+//     const tb2 = document.createElement('tbody');
+// }
+
 
 
 
