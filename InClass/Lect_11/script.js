@@ -21,9 +21,6 @@ documents.style.backgroundColor = "yellow";
 documents.style.padding = "12px";
 documents.style.margin = "20px";
 
-inputButtons.style.backgroundColor = "red";
-inputButtons.style.border = "10px solid green";
-inputButtons.style.borderRadius = "5px";
 
 
 
