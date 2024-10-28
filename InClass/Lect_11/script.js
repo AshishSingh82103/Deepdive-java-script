@@ -51,7 +51,7 @@ function change() {
 
 const root = document.createElement('html');
 
-consolelog(root);
+console.log(root);
 
 root.lang = 'en';
 
@@ -75,27 +75,27 @@ root.appendChild(body);
 
 // ----------- find the element of the traversing of the query selector --------------
 
-let documents = document.querySelector('h1');
+// let documents = document.querySelector('h1');
 
-let inputButtons = document.querySelector('.styled');
+// let inputButtons = document.querySelector('.styled');
 
-let outputButtons = documents.querySelector('.styled_1');
+// let outputButtons = documents.querySelector('.styled_1');
 
-documents.style.backgroundColor = "yellow";
-documents.style.padding = "12px";
-documents.style.margin = "20px";
+// documents.style.backgroundColor = "yellow";
+// documents.style.padding = "12px";
+// documents.style.margin = "20px";
 
-inputButtons.style.backgroundColor = "blue";
-inputButtons.style.padding = "25px";
-inputButtons.style.margin = '12px';
-inputButtons.style.borderRadius = '10px';
-inputButtons.style.border = 'solid 2px red';
+// inputButtons.style.backgroundColor = "blue";
+// inputButtons.style.padding = "25px";
+// inputButtons.style.margin = '12px';
+// inputButtons.style.borderRadius = '10px';
+// inputButtons.style.border = 'solid 2px red';
 
-outputButtons.style.backgroundColor = 'pink';
-outputButtons.style.padding = '12px';
-outputButtons.style.margin = '35px';
-outputButtons.style.borderRadius = '10px';
-outputButtons.style.border = 'solid 2px red';
+// outputButtons.style.backgroundColor = 'pink';
+// outputButtons.style.padding = '12px';
+// outputButtons.style.margin = '35px';
+// outputButtons.style.borderRadius = '10px';
+// outputButtons.style.border = 'solid 2px red';
 
 function genrateTable() {
     const tb1 = document.createElement('table');
@@ -147,8 +147,12 @@ function genrateTable() {
     
     secondParagraph.style.backgroundColor = 'red';
 
-    
+    const thirdParagraph = paragraph[2];
+    thirdParagraph.style.backgroundColor = "yellow";
+
   }
+
+  // const special = document.querySelectorAll("p.warning, p.note");
     
 
 
