@@ -154,14 +154,13 @@ function genrateTable() {
 
 
   function genrateTablelink() {
-    const list = document.getElementsByTagName("order_list");
+    const list = document.getElementById("order_list");
 
-    const listTwo = list[0];
+    list.style.backgroundColor = "yellow";
 
-    listTwo.style.backgroundColor = "pink";
   }
 
-  // const special = document.querySelectorAll("p.warning, p.note");
+  const special = document.querySelectorAll("p.warning, p.note");
     
 
 
