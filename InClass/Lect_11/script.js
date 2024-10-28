@@ -152,6 +152,15 @@ function genrateTable() {
 
   }
 
+
+  function genrateTablelink() {
+    const list = document.getElementsByTagName("order_list");
+
+    const listTwo = list[0];
+
+    listTwo.style.backgroundColor = "pink";
+  }
+
   // const special = document.querySelectorAll("p.warning, p.note");
     
 
