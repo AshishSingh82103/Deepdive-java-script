@@ -138,6 +138,7 @@ function genrateTable() {
       tbl.setAttribute("border", "2");
     }
     
+    
 
 
 
