@@ -161,6 +161,29 @@ function genrateTable() {
   }
 
   const special = document.querySelectorAll("p.warning, p.note");
+
+  let promiseOne = new Promise((resolve, reject) => {
+    setInterval(() => {
+      let item_bbundell = null;
+      if(item_bbundell) {
+        console.log("I am a promise one");
+      } else {
+        console.log('no item found');
+      }
+
+    })
+  })
+
+  promiseOne
+  .then((user) => {
+    console.log(user, "I am a promise one");
+  })
+  .catch(() => {
+    console.log("np item found")
+  })
+  .finally(() => {
+    console.log("finally we got here means API user fetching means");
+  })
     
 
 
