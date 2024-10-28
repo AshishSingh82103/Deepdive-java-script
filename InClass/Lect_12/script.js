@@ -10,3 +10,5 @@ myBody = document.getElementsByTagName('body [0]');
 mybody.appendChild(start);
 
 mybody.appendChild(end);
+
+
