@@ -1,0 +1,57 @@
+<html lang="en">
+    <head>
+        <title>
+            Sample code - Traversing an HTML Table with javascript and DoM Interfaces
+        </title>
+        <script>
+            function start() {
+    
+                // get the reference for the body
+                const mybody = document.getElementsByTagName("body")["0"];
+    
+                // creates <table> and <tbody> elements
+                const mytable = document.createElement('table');
+                const myTableBody = document.createElement("tbody");
+    
+                //  creating all cells
+                for(let j = 0; j < 3; j++) {
+    
+                    //  creates a <tr> element
+                    const myCurrentFlow = document.createElement("tr");
+    
+                    for(let i = 0; i < 4; i++) {
+    
+                        // creates a <td> elements.
+                        const myCurrentCell = document.createElement("td");
+    
+                        //  create a text node
+    
+                        const currText = document.createTextNode(`cell is row ${j}, column ${i}`);
+                    
+                        }
+                    // append the text node we are created in <td> head along with the same the remarks pointed of the main cell.
+                    
+                    myCurrentCell.appendChild(currText);
+    
+                    //  appends the cell <td> into <body>
+                    myTableBody.appendChild(myTableBody);
+    
+                    //  appned the table into body
+    
+                    mybody.appendChild(myTable);
+    
+                    //  set the border attributes of myTbale to 2;
+    
+                    myTable.setAttribute("border", "2");
+                    
+                    }
+    
+    
+                
+            }
+        </script>
+        <body onload="start()"></body>
+    </head>
+    
+    
+</html>
