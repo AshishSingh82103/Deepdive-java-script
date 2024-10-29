@@ -13,24 +13,41 @@ function changeBackground() {
 
 btn.addEventListener("click", changeBackground);
 
-// ------------- Removing Listeners --------------------
-// btn.removeEventListener("click", changeBackground);
+// // ------------- Removing Listeners --------------------
+// // btn.removeEventListener("click", changeBackground);
 
-// btn.removeEventListener("click", removeEventListener);
+// // btn.removeEventListener("click", removeEventListener);
 
-// const controller = new AbortController();
+// // const controller = new AbortController();
 
-const inputBtn = document.querySelector("#input");
+const controller = new AbortController();
 
-function colorChanger(number) {
+btn.addEventListener("click",
+  () => {
+    const rndCol = `rgb(${random(255)} ${random(255)} ${random(255)})`;
+    document.body.style.backgroundColor = rndCol;
+  },
+  { signal: controller.signal } // pass an AbortSignal to this handler
+);
 
-    return Math.floor(Math.random() * (number + 1));
+const btn1 = document.querySelector('#btn1');
+
+// function random() {
+//     btn.removeEventListener("click", changeBackground);
+// }
+
+function randomclick(number) {
+    return Math.floor(Math.random() * (number + 1) );
 }
 
-function changeBackgroundCol() {
-    const randomCOlor = `${colorChanger(255)} ${colorChanger(255)} ${colorChanger(255)}`
-    document.body.style.backgroundColor = randomCOlor;
+function colorchanger1() {
+    const btn_Setting = `rgb${randomclick(255)} ${randomclick(255)} ${randomclick(255)}`;
+    document.body.style.backgroundColor = btn_Setting
 }
+btn1.addEventListener('click',colorchanger1);
+btn1.addEventListener('click', console.log('logoIn into the main value'));
 
-inputBtn.addEventListener('click', changeBackgroundCol);
 
+// console.log(Math.floor(Math.random() * (10 + 1)));
+
+console.log("new balnace");
