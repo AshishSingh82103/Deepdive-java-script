@@ -11,4 +11,12 @@ mybody.appendChild(start);
 
 mybody.appendChild(end);
 
+mybody.appendlastChild(middle);
+
+
+myTable.getAttribute("border");
+
+// -------------- considering to join all the main file  from it's recurring  ---------------
+
+
 
