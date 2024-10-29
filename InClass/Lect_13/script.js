@@ -74,3 +74,50 @@ for (const button of buttons) {
   button.addEventListener("click", bgChange);
 }
 
+let value = 54;
+
+console.log(value);
+
+if(value > 20 ) {
+    console.log('Value defined');
+} else if (value < 20) {
+    console.log('value exceeded');
+} else {
+    console.log('Something is print');
+}
+
+console.log("new _value is assgin the ment");
+
+function sechduling_the_link() {
+    console.log('newValue');
+}
+
+function set_user() {
+    let the_value = 54;
+    if(the_value > 20) {
+        console.log("new value is defined from the user");
+    } else if(the_value < 20) {
+        console.log('Value exceeded');
+    } else {
+        console.log('Something print');
+    }
+}
+
+value_user(undefined);
+console.log(function newuser(value1, value2){
+    return value1 + value2;
+});
+
+const user_undefined = function value_undefined(num1, num2) {
+    console.log("new value");
+
+}
+
+console.log('newuser')
+
+
+const buttun2 = document.querySelector('button');
+
+function colorchanger1() {
+    
+}
