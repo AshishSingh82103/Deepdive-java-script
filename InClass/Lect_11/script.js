@@ -184,6 +184,27 @@ function genrateTable() {
   .finally(() => {
     console.log("finally we got here means API user fetching means");
   })
+
+  //  ------------ set-backgound -------------
+
+  let user_Undefined = undefined;
+  console.log(user_undefined);
+
+  if(user_undefined === "undefined") {
+    console.log("I am a promise one");
+
+  } else if(user_undefined === nulll) {
+    console.log('no item found');
+
+  } else if (user_undefined === value) {
+    console.log("This is a fecting side error issue");
+  } else if (user_undefined === null) {
+    console.log("loginError undefined");
+  }
+
+  
+ 
+
     
 
 
