@@ -118,6 +118,6 @@ console.log('newuser')
 
 const buttun2 = document.querySelector('button');
 
-function colorchanger1() {
-    
+function colorchanger1(number) {
+    return (Math.floor(Math.random * (number + 1)))
 }
