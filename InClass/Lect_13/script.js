@@ -121,3 +121,13 @@ const buttun2 = document.querySelector('button');
 function colorchanger1(number) {
     return (Math.floor(Math.random * (number + 1)))
 }
+
+function changeLength() {
+  console.log('some value got it!')
+}
+
+
+let promise = new Promise((resolve, reject) => {
+    
+  console.log("value assinged the function observed")
+})
