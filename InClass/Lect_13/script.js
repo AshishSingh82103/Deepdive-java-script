@@ -244,6 +244,8 @@ let constUser = new deployment((resolve, reject) => {
 });
 
 
+
+
 let promise = new Promise((resolve, reject) => {
   let items = undefined;
   if(items === undefined) {
@@ -257,7 +259,7 @@ promise
 .then((user) =>{
   console.log(user, "new console has been created");
 })
-.catch(() => {
+.catch((error, 'error') => {
 
 })
 
