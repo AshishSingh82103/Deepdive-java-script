@@ -259,9 +259,17 @@ promise
 .then((user) =>{
   console.log(user, "new console has been created");
 })
-.catch((error, 'error') => {
-
+.catch((error) => {
+  console.log('new user has been created');
 })
+.finally(() => {
+    console.log('fetching the API');
+});
+
+let func = function () {
+  // code here
+  
+}
 
 
 
