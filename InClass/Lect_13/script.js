@@ -181,16 +181,68 @@ const video = document.querySelector('video');
 
 // // btn.addEventListener("click", () => box.classList.add("hidden"));
 
-box.addEventListener("click", () => box.classList.add("hidden"));
+// box.addEventListener("click", () => box.classList.add("hidden"));
 
-// fixing the problem with startprpogation()
+// // fixing the problem with startprpogation()
 
-video.addEventListener("click", (event) =>{
-  event.stopPropagation();
-  video.play();
+// video.addEventListener("click", (event) =>{
+//   event.stopPropagation();
+//   video.play();
+// })
+
+// box.addEventListener("click", () => box.classList.add('hidden'));
+
+
+
+// const output = document.querySelector('#output');
+
+// function handelClick(e) {
+//   output.textContent += `User clicked on a ${e.currentTarget.tagName} element\n`;
+// }
+
+// const container = document.querySelector('#container');
+
+// const button = document.querySelector("button");
+
+// document.body.addEventListener("click", handelClick, {capture: true});
+
+// container.addEventListener('click', handelClick, {capture: true});
+
+// button.addEventListener('click', handelClick);
+
+
+// ---------------- Event - delegation --------------
+
+function random(number) {
+  return Math.floor(Math.random() * number);
+}
+
+function bgChange() {
+  const rndCol = `rgb(${random(255)} ${random(255)} ${random(255)})`;
+  return rndCol;
+}
+
+const container = document.querySelector("#container");
+
+container.addEventListener("click", (event) => {
+  event.target.style.backgroundColor = bgChange();
+});
+
+
+const devcon = document.getElementById('dev-console');
+
+devcon.textContent = 'some value get';
+
+let constUser = new deployment((resolve, reject) => {
+  console.log('newly assignment');
+  if(value = null) {
+    reject('some issue has been arrived');
+  } else if (value === null) {
+    resolve('got some issue has been not sent');
+  }
 })
 
-box.addEventListener("click", () => box.classList.add('hidden'));
+
 
 
 
