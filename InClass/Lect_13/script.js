@@ -231,7 +231,7 @@ container.addEventListener("click", (event) => {
 
 const devcon = document.getElementById('dev-console');
 
-devcon.textContent = 'some value get';
+// devcon.textContent = 'some value get';
 
 let constUser = new deployment((resolve, reject) => {
   console.log('newly assignment');
@@ -240,7 +240,29 @@ let constUser = new deployment((resolve, reject) => {
   } else if (value === null) {
     resolve('got some issue has been not sent');
   }
+
+});
+
+
+let promise = new Promise((resolve, reject) => {
+  let items = undefined;
+  if(items === undefined) {
+    resolve('value is null for the some rare excess');
+  } else {
+    reject('fetching the API user');
+  }
 })
+
+promise
+.then((user) =>{
+  console.log(user, "new console has been created");
+})
+.catch(() => {
+
+})
+
+
+
 
 
 
