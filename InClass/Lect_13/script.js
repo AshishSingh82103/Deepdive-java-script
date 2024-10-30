@@ -274,7 +274,7 @@ let func = function (num1, num2) {
 
 }
 
-console.log(func.apply(3, 2));
+console.logfunc.apply(3, 2);
 
 
 
