@@ -266,10 +266,17 @@ promise
     console.log('fetching the API');
 });
 
-let func = function () {
+let func = function (num1, num2) {
   // code here
-  
+  return num1 + num2;
+
+
+
 }
+
+console.log(func.apply(3, 2));
+
+
 
 
 
