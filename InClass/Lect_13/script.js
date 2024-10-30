@@ -143,28 +143,54 @@
 
 // console.log('returning the value of it');
 
-const output = document.querySelector("#output");
+// const output = document.querySelector("#output");
 
-function handelClick(e) {
-  output.textContent += `You clicked on a ${e.currentTarget.tagName} elemnet\n`;
+// function handelClick(e) {
+//   output.textContent += `You clicked on a ${e.currentTarget.tagName} elemnet\n`;
 
-}
+// }
 
-const container = document.querySelector('#container');
-container.addEventListener('click', handelClick);
-
-
-const output = document.querySelector("#output");
-function handleClick(e) {
-  output.textContent += `You clicked on a ${e.currentTarget.tagName} element\n`;
-}
-
-const container = document.querySelector("#container");
-const button = document.querySelector("button");
-
-document.body.addEventListener("click", handleClick);
-container.addEventListener("click", handleClick);
-button.addEventListener("click", handleClick);
+// const container = document.querySelector('#container');
+// container.addEventListener('click', handelClick);
 
 
-const btn = 
+// const output = document.querySelector("#output");
+// function handleClick(e) {
+//   output.textContent += `You clicked on a ${e.currentTarget.tagName} element\n`;
+// }
+
+// const container = document.querySelector("#container");
+// const button = document.querySelector("button");
+
+// document.body.addEventListener("click", handleClick);
+// container.addEventListener("click", handleClick);
+// button.addEventListener("click", handleClick);
+
+// // ---------------- btn class lst remover --------------
+
+const btn = document.querySelector('button');
+
+const box = document.querySelector('div');
+
+const video = document.querySelector('video');
+
+
+// btn.addEventListener("click", () => box.classList.remove("hidden"));
+
+// video.addEventListener("click", () => video.play());
+
+// // btn.addEventListener("click", () => box.classList.add("hidden"));
+
+box.addEventListener("click", () => box.classList.add("hidden"));
+
+// fixing the problem with startprpogation()
+
+video.addEventListener("click", (event) =>{
+  event.stopPropagation();
+  video.play();
+})
+
+box.addEventListener("click", () => box.classList.add('hidden'));
+
+
+
