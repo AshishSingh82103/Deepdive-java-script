@@ -10,7 +10,11 @@
 // heading.style.backgroundColor = "green";
 // heading.style.padding = "10px";
 
-// const body = document.getElementsByTagName('body')[0];
-// body.style.backgroundColor = "pink";
+const body = document.getElementsByTagName('body')[0];
+body.style.backgroundColor = "pink";
+
+const nav = document.getElementById("nav")[0];
+nav.style.backgroundColor = "iceblue";
+
 
 
