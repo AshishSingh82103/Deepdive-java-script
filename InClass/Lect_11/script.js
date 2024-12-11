@@ -8,6 +8,6 @@ para.style.backgroundColor = "yellow";
 const heading = document.getElementById('heading');
 heading.style.backgroundColor = "green";
 
-const body = document.getElementsByTagName('body');
+const body = document.getElementsByTagName('body')[0];
 body.style.backgroundColor = "pink";
 
