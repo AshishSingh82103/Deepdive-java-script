@@ -13,6 +13,9 @@ heading.style.padding = "10px";
 const body = document.getElementsByTagName('body')[0];
 body.style.backgroundColor = "pink";
 
+const body = document.getElementsByTagName('body')[0];
+body.document.style.backgOroundColor = "Iceblue";
+
 
 
 
