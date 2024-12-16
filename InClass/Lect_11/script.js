@@ -2,15 +2,7 @@
 
 // -------------- Dom => data object manipulation ------------
 
-document.addEventListener('DOMContentLoaded', () => { 
-    const socialLinks = document.querySelectorAll('.social-media a'); 
-    socialLinks.forEach(link => { 
-        link.addEventListener('click', (e) => {
-             e.preventDefault(); 
-             alert(`Redirecting to ${link.textContent}...`); 
-            }); 
-        });
-    });
+document.getElementById('contactForm').addEventListener('submit', function(event) { event.preventDefault(); alert('Your message has been sent!'); });
 
 
 

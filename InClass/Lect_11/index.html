@@ -4,156 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Call back</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
-<style>
-    body { 
-        background-color: aliceblue;
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0; 
-        }
-    
-    nav {
-        background-color: #3333;
-    }
-    .navbar {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-    }
-    .navbar li {
-        float: left;
-    }
-    .navbar li a {
-        display: block;
-        color: rgb(240, 15, 15);
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-    }
-    .navbar li a:hover {
-        background-color: #1697e3
-    }
-    section#intro {
-        background-color: #aff311; 
-        padding: 20px; 
-        margin: 20px; 
-        border-radius: 8px;
-    }
-    section#intro h1 { 
-        color: #ec0a0a; 
-    }
 
-    section#intro p { 
-        color: #3721fa; 
-    }
-    .sidebar {
-        width: 250px;
-        background-color: #b3cf13;
-        color: rgb(223, 11, 11);
-        padding: 15px;
-        box-sizing: border-box;
-        border-radius: 20px;
-        margin: auto;
-    }
-    .sidebar h2 {
-        text-align: center;
-    }
-    .sidebar ul {
-        list-style-type: none;
-        padding: 0;
-    }
-    .sidebar ul li {
-        margin: 10px 0;
-    }
-
-    .sidebar ul li a {
-        color: white;
-        text-decoration: none;
-        display: block;
-        padding: 10px;
-        background-color: #ea12c6;
-        border-radius: 5px;
-    }
-    .sidebar ul li a:hover{
-        background-color: #167bf7;
-    }
-
-    main { 
-        flex: 1; 
-        padding: 20px; 
-        box-sizing: border-box; 
-    }
-    footer {
-        background-color: #333;
-        color: white;
-        text-align: center;
-        padding: 20px 0;
-        position: fixed;
-        width: 100%;
-        bottom: 0;
-    }
-    footer p {
-        margin: 0;
-    }
-    .soical-media {
-        margin-top: 10px;
-    }
-    .soical-media a {
-        color: white;
-        text-decoration: none;
-        margin: 0 10px;
-    }
-    .soical-media a:hover {
-        text-decoration: underline;
-    }
 
     
-</style>
+
 <body>
-    <nav id="nav">
-        <ul class="navbar">
-            <li><a href="#Home">Home</a></li>
-            <li><a href="#Services">Services</a></li>
-            <li><a href="#About">About</a></li>
-            <li><a href="#Contact">Contact</a></li>
-        </ul>
-    </nav>
-    
-    <section id="intro"> 
-        <h1>Welcome to Our Website</h1> 
-        <p>This section provides an introduction to our website. We aim to offer the best services to our customers.</p> 
-        
+    <header class="header"> 
+
+        <h1>ABC Construction</h1> 
+        <nav> 
+            <ul> 
+                <li><a href="#home">Home</a></li> 
+                <li><a href="#services">Services</a></li> 
+                <li><a href="#contact">Contact</a></li> 
+            </ul> 
+        </nav> 
+
+    </header> 
+
+    <section id="home" class="home"> 
+        <h2>Welcome to ABC Construction</h2> 
+        <p>Building dreams with precision and care.</p> 
+    </section> 
+
+    <section id="services" class="services"> 
+        <h2>Our Services</h2> 
+        <div class="service"> 
+            <h3>Residential Construction</h3> 
+            <p>Building comfortable and stylish homes for families.</p> 
+        </div> 
+        <div class="service"> 
+            <h3>Commercial Construction</h3> 
+            <p>Constructing reliable and efficient commercial spaces.</p> 
+        </div> <div class="service"> 
+            <h3>Renovation Services</h3> 
+            <p>Transforming old spaces into modern marvels.</p> 
+        </div> 
+
+    </section> 
+
+    <section id="contact" class="contact"> 
+        <h2>Contact Us</h2> 
+        <form id="contactForm"> 
+            <label for="name">Name:</label> 
+            <input type="text" id="name" name="name" required> 
+            <label for="email">Email:</label> 
+            <input type="email" id="email" name="email" required> 
+            <label for="message">Message:</label> 
+            <textarea id="message" name="message" required></textarea> 
+            <button type="submit">Send Message</button> 
+        </form> 
     </section>
-    <aside class="sidebar">
-        <h2>Sidebar Title</h2>
-        <ul>
-            <li><a href="#section1">Section 1</a></li>
-            <li><a href="#section1">Section 2</a></li>
-            <li><a href="#section1">Section 3</a></li>
-            <li><a href="#section1">Section 4</a></li>
-            <li><a href="#section1">Section 1</a></li>
-            <li><a href="#section1">Section 2</a></li>
-            <li><a href="#section1">Section 3</a></li>
-            <li><a href="#section1">Section 4</a></li>
-        </ul>
-    </aside>
 
-    <main>
-        <h1>Welcome to the Main Content</h1>
-        
-    </main>
 
-    <!-- footer -->
-     <footer id="footer">
-        <p>&copy; 2024 Your Company. All rights reserved.</p>
-     </footer>
-     <div class="soical-media">
-        <a href="#" id="facebook">Facebook</a>
-        <a href="#" id="X">X</a>
-        <a href="#" id="instagram">Instagram</a>
-     </div>
+    <footer class="footer"> 
+        <p>&copy; 2024 ABC Construction. All rights</p>
+        </footer>
 
     
   
