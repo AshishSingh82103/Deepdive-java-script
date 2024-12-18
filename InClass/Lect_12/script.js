@@ -4,10 +4,10 @@ document.getElementById('contactForm').addEventListener('submit', function(event
 });
 
 // Smooth Scrolling for navigation Links
-document.querySelectorAll('nav a').foreach(anchor => {
+document.querySelectorAll('nav a').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoview({
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
 
         });
     });
@@ -20,9 +20,12 @@ document.querySelector('footer p').textContent = `©${year} My Website. All righ
 // Interactive Services Section
 const services = document.querySelectorAll('.service');
 services.forEach(service=>{
+    service.addEventListener('mouseenter', () =>{
     service.style.transform = 'scale(1.05)';
     service.style.transition = 'transform 0.3s';
 });
 service.addEventListener('mouseleave', () => {
     service.style.transform = 'scale(1)';
-})
+});
+
+});
