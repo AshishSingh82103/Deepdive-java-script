@@ -10,6 +10,89 @@ header {
     align-items: center;
     padding: 20px;
     background-color: #35424a;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+.logo{
+    height: 50px;
+    border-radius: 25px;
+}
 
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+}
+header nav ul li {
+    margin: 0 15px;
+
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 100px 20px;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.home {
+    background-color: #ececec;
+}
+
+.services {
+    background-color: #e2e8f0;
+}
+
+.about {
+    background-color: #dfe6e9;
+}
+
+.contact {
+    background-color: #d1d8e0;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    bottom: 0;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
 
