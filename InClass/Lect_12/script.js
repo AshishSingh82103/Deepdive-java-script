@@ -43,3 +43,25 @@ function readJSON(filename, callback){
   function readJSON(filename) {
     return readFile(filename, 'utf8').then(JSON.parse);
   }
+
+  function readJSON(filename, callback){
+    fs.readFile(filename, 'utf8', function (err, res){
+      if (err) return callback(err);
+      try {
+        res = JSON.parse(res);
+      } catch (ex) {
+        return callback(ex);
+      }
+      callback(null, res);
+    });
+  }
+
+  function readFile(filename, enc){
+    return new Promise(function (fulfill, reject){
+      fs.readFile(filename, enc, function (err, res){
+        if (error) reject(error);
+        else fulfill(res);
+      });
+    });
+  }
+
