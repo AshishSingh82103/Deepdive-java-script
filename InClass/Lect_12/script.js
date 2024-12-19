@@ -13,6 +13,8 @@ document.querySelectorAll('nav a').forEach(anchor => {
     });
 });
 
+// shifting about the pernate 
+
 // Dynamic Date in foooter
 const year = new Date().getFullYear();
 document.querySelector('footer p').textContent = `©${year} My Website. All rights reserved`;
