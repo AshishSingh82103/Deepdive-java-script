@@ -77,3 +77,15 @@ function readJSON(filename){
     });
   }
 
+  function readJSON(filename){
+    return new Promise(function (fulfill, reject){
+      readFile(filename, 'utf8').done(function (res){
+        try {
+          fulfill(JSON.parse(res));
+        } catch (ex) {
+          reject(ex);
+        }
+      }, reject);
+    });
+  }
+
