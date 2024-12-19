@@ -3,12 +3,12 @@ body {
     sans-serif; 
     margin: 0; 
     padding: 0; 
-    background-color: #0aa6f4; 
+    background-color: #f4f4f4; 
 } 
 
 .header { 
-    background-color: #1ae713; 
-    color: rgb(20, 138, 241); 
+    background-color: #35424a; 
+    color: white; 
     padding: 20px 0; 
     text-align: center; 
 } 
@@ -27,7 +27,7 @@ body {
 } 
 
 .header nav ul li a { 
-    color: rgb(226, 17, 249); 
+    color: white; 
     text-decoration: none; 
 } 
 
@@ -38,15 +38,15 @@ body {
 
 .services .service { 
     margin: 20px 0; 
-    border: 1px solid #8cf40c; 
+    border: 1px solid #ececec; 
     padding: 20px; 
     border-radius: 8px; 
     background-color: rgb(214, 17, 63); 
 } 
 
 footer { 
-    background-color: #f1138d; 
-    color: rgb(13, 63, 224); 
+    background-color: #333; 
+    color: white; 
     text-align: center; 
     padding: 10px 0; 
     position: fixed; 
