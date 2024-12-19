@@ -31,3 +31,15 @@ service.addEventListener('mouseleave', () => {
 });
 
 });
+
+
+function readJSON(filename, callback){
+    fs.readFile(filename, 'utf8', function (err, res){
+      if (err) return callback(err);
+      callback(null, JSON.parse(res));
+    });
+  }
+
+  function readJSON(filename) {
+    return readFile(filename, 'utf8').then(JSON.parse);
+  }
