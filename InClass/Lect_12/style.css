@@ -99,7 +99,9 @@ form input, form textarea, form button {
 }
 
 
-
+const user = new Promise((resolve, reject) => {
+    
+})
 
 
 
