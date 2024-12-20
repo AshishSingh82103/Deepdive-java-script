@@ -67,5 +67,10 @@ function readJSON(filename, callback){
 
 
 const newComingFeautre = new Promise((resolve, reject) => {
-  
+  let value = null;
+  if(value === null) {
+    console.log(resolve,"send user is the main target is mainly cuase");
+  } else if (value === undefined) {
+    console.log(reject, "reject is error");
+  }
 })
