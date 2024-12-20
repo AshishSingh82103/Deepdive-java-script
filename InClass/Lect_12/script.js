@@ -73,4 +73,5 @@ const newComingFeautre = new Promise((resolve, reject) => {
   } else if (value === undefined) {
     console.log(reject, "reject is error");
   }
-})
+});
+
