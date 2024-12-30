@@ -77,7 +77,9 @@ const newComingFeautre = new Promise((resolve, reject) => {
 
 console.log("reconcial enageent");
 
-
+llet console = new user((resolve, reject) => [
+  new user
+])
 
 
 
